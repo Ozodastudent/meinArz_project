@@ -318,7 +318,38 @@ template {
   display: none;
 }
 
-/* FONTS */ /* GENERAL */
+/* FONTS */
+@font-face {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Blinker-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Blinker-Regular.ttf");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Newsreader-Bold.ttf");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Newsreader-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+/* GENERAL */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -383,7 +414,63 @@ body {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 80px;
+}
+
+.header {
+  padding-top: 58px;
+  background-color: lightcoral;
+}
+.header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav_item {
+  list-style: none;
+}
+.nav_item + .nav_item {
+  margin-left: 95px;
+}
+.nav_link {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 134.5%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 2px solid rgb(78, 103, 125);
+}
+
+.login_btn {
+  padding: 5px 30px;
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 157%;
+  color: #ffffff;
+  text-decoration: none;
+  background: #4e677d;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */

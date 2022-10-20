@@ -1,0 +1,42 @@
+.header {
+  padding-top: 58px;
+  background-color: lightcoral;
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  &_item {
+    list-style: none;
+    & + & {
+      margin-left: 95px;
+    }
+  }
+  &_link {
+    font-family: "Blinker";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 134.5%;
+    letter-spacing: 1.16667px;
+    color: #4e677d;
+    text-decoration: none;
+  }
+}
+.active {
+  border-bottom: 2px solid rgba(78, 103, 125, 1);
+}
+.login_btn {
+  padding: 5px 30px;
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 157%;
+  color: #ffffff;
+  text-decoration: none;
+  background: #4e677d;
+  border-radius: 5px;
+}
