@@ -473,4 +473,70 @@ body {
   text-decoration: none;
   background: #4e677d;
   border-radius: 5px;
+}
+
+.hero {
+  padding-top: 126px;
+  background-color: cadetblue;
+}
+.hero_parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_first_part {
+  width: 100%;
+  max-width: 546px;
+}
+.hero_first_part_img_link {
+  text-decoration: none;
+}
+.hero_first_part_title {
+  font-family: "Newsreader";
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 134.5%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+.hero_first_part_desc {
+  margin-top: -30px;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 179.5%;
+  letter-spacing: 0.5px;
+  color: rgba(70, 77, 89, 0.8);
+}
+.hero_first_part_desc_box {
+  width: 100%;
+  max-width: 515px;
+}
+
+.hero_second_part {
+  position: relative;
+  width: 490px;
+  height: 538px;
+  background-image: url("../../images/girl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_heart_icon {
+  position: absolute;
+  top: calc(50% - 195px);
+  left: calc(50% - 145px);
+}
+
+.hero_curved_line {
+  position: absolute;
+  top: calc(50% - 290px);
+  right: calc(50% - 330px);
 }/*# sourceMappingURL=main.css.map */
