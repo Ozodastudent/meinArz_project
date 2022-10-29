@@ -414,7 +414,7 @@ body {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1728px;
   margin: 0 auto;
   padding: 0 80px;
 }
@@ -538,5 +538,14 @@ body {
 .hero_curved_line {
   position: absolute;
   top: calc(50% - 290px);
-  right: calc(50% - 330px);
+  right: calc(50% - 280px);
+}
+
+.hero_third_part_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=main.css.map */

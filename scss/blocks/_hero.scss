@@ -51,5 +51,11 @@
 .hero_curved_line {
   position: absolute;
   top: calc(50% - 290px);
-  right: calc(50% - 330px);
+  right: calc(50% - 280px);
+}
+.hero_third_part {
+  &_nav {
+    display: flex;
+    align-items: center;
+  }
 }
