@@ -477,7 +477,7 @@ body {
 
 .hero {
   padding-top: 126px;
-  background-color: cadetblue;
+  background-color: rgb(163, 208, 209);
 }
 .hero_parts {
   display: -webkit-box;
@@ -541,6 +541,9 @@ body {
   right: calc(50% - 280px);
 }
 
+.hero_third_part {
+  padding: 37px 90px 38px 38px 90px;
+}
 .hero_third_part_nav {
   display: -webkit-box;
   display: -ms-flexbox;

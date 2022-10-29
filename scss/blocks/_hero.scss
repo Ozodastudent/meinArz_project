@@ -1,6 +1,6 @@
 .hero {
   padding-top: 126px;
-  background-color: cadetblue;
+  background-color: rgb(163, 208, 209);
   &_parts {
     display: flex;
     justify-content: space-between;
@@ -54,6 +54,7 @@
   right: calc(50% - 280px);
 }
 .hero_third_part {
+  padding: 37px 90px 38px 38px 90px;
   &_nav {
     display: flex;
     align-items: center;
