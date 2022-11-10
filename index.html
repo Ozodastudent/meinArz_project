@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="./bootstrap-5.0.2/dist/css/bootstrap.min.css"
-    />
+      href="./bootstrap-5.0.2/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/main.css" />
     <title>Mein Arzt</title>
   </head>
   <body>
     <!-- header part -->
     <header class="header">
-      <div class="container">
+      <div class="containers">
         <div class="header_inner">
           <a href="#" class="logo">
             <img src="./images/logo.png" alt="mein arzt logo" />
@@ -35,8 +34,9 @@
     </header>
     <!-- main part -->
     <main>
+      <!-- hero part -->
       <section class="hero">
-        <div class="container">
+        <div class="containers">
           <div class="hero_inner">
             <div class="hero_parts">
               <div class="hero_first_part">
@@ -65,27 +65,110 @@
                 </div>
               </div>
             </div>
-            <div class="hero_third_part bg-white">
-              <div class="hero_third_part_nav d-flex">
-                <h5>Book an Appointment</h5>
-                <a class="d-flex align-items-center" href="#">
-                  <img src="./images/hero_icon1.png" alt="person icon" />
+            <div class="hero_third_part">
+              <div
+                class="hero_third_part_nav d-flex justify-content-between align-items-center"
+              >
+                <h5 class="hero_nav_title me-5">Book an Appointment</h5>
+                <a
+                  class="hero_nav_link d-flex align-items-center text-decoration-none"
+                  href="#"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/hero_icon1.png"
+                    alt="person icon"
+                  />
                   pediatric
                 </a>
-                <a href="#">
-                  <img src="./images/hero_icon2.png" alt="dentist icon" />
+                <a
+                  class="hero_nav_link d-flex align-items-center text-decoration-none"
+                  href="#"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/hero_icon2.png"
+                    alt="dentist icon"
+                  />
                   dentist
                 </a>
-                <a href="#">
-                  <img src="./images/hero_icon3.png" alt="psychological icon" />
+                <a
+                  class="hero_nav_link d-flex align-items-center text-decoration-none"
+                  href="#"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/hero_icon3.png"
+                    alt="psychological icon"
+                  />
                   psychological
                 </a>
-                <a href="#">
-                  <img src="./images/hero_icon4.png" alt="search icon" />
+                <a
+                  class="hero_nav_link d-flex align-items-center text-decoration-none"
+                  href="#"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/hero_icon4.png"
+                    alt="search icon"
+                  />
                   search
                 </a>
               </div>
-              <div class="hero_third_part_bar"></div>
+              <div
+                class="hero_third_part_bar d-flex justify-content-center align-items-center"
+              >
+                <div class="hero_bar d-flex align-items-center">
+                  <img
+                    class="me-3"
+                    src="./images/hero_icon5.png"
+                    alt="location icon"
+                  />
+                  <div>
+                    <span class="bar_title">Location</span>
+                    <p class="bar_desc">Mokotów, Warsaw</p>
+                  </div>
+                </div>
+                <div class="hero_bar d-flex align-items-center">
+                  <img
+                    class="me-3"
+                    src="./images/hero_icon6.png"
+                    alt="location icon"
+                  />
+                  <div>
+                    <span class="bar_title">Location</span>
+                    <p class="bar_desc">Mokotów, Warsaw</p>
+                  </div>
+                </div>
+                <div class="hero_bar d-flex align-items-center">
+                  <img
+                    class="me-3"
+                    src="./images/hero_icon7.png"
+                    alt="location icon"
+                  />
+                  <div>
+                    <span class="bar_title">Location</span>
+                    <p class="bar_desc">Mokotów, Warsaw</p>
+                  </div>
+                </div>
+                <button class="btn hero_bar_btn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- consulting part -->
+      <section class="consulting">
+        <div class="containers">
+          <div class="consulting_inner d-flex">
+            <div class="consulting_photo d-flex flex-column align-items-center">
+              <h4 class="consulting_photo_title">
+                E-Consultation Step by Step
+              </h4>
+              <img src="./images/consult2.png" alt="consult image" />
+              <a href="#" class="consulting_photo_link text-decoration-none"
+                >Make an E-Visit</a
+              >
             </div>
           </div>
         </div>

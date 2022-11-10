@@ -42,6 +42,7 @@
   background-image: url("../../images/girl.png");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 .hero_heart_icon {
   position: absolute;
@@ -54,9 +55,77 @@
   right: calc(50% - 280px);
 }
 .hero_third_part {
-  padding: 37px 90px 38px 38px 90px;
-  &_nav {
-    display: flex;
-    align-items: center;
+  position: absolute;
+  // left: calc(50% - 440px);
+  z-index: 1;
+  margin-top: -30px;
+  padding: 37px 90px 38px 90px;
+  background-color: #fff;
+  box-shadow: 0px 2px 17px rgba(156, 156, 156, 0.1);
+  border-radius: 10px;
+}
+.hero_nav_title {
+  margin-top: 10px;
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+.hero_nav_link {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: rgba(78, 103, 125, 0.5);
+  border-bottom: 1px solid rgba(78, 103, 125, 0.5);
+  &:hover {
+    font-weight: 600;
+    color: #4e677d;
+    border-bottom: 2px solid #4e677d;
   }
+  & + & {
+    margin-left: 36px;
+  }
+}
+.hero_third_part_bar {
+  margin-top: 40px;
+}
+.hero_bar {
+  padding: 5px;
+  border: 1px solid rgba(78, 103, 125, 0.25);
+  border-radius: 5px;
+  & + & {
+    margin-left: 50px;
+  }
+}
+.bar_title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #989898;
+}
+.bar_desc {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+.hero_bar_btn {
+  margin-left: 60px;
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #ffffff;
+  background: #4e677d;
+  border-radius: 5px;
 }

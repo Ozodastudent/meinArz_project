@@ -1,0 +1,29 @@
+.consulting {
+  padding-left: 80px;
+  background-image: url("../../images/consult1.png");
+  background-repeat: no-repeat;
+  background-size: 213px;
+  background-position-y: calc(50% + 180px);
+  padding-top: 410px;
+  // background-color: rgb(207, 144, 144);
+}
+.consulting_photo {
+  &_title {
+    width: 260px;
+    font-family: "Newsreader";
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 145%;
+    text-align: center;
+    color: #4e677d;
+  }
+  &_link {
+    font-family: "Newsreader";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 157%;
+    letter-spacing: 1.16667px;
+    color: #4e677d;
+    border-bottom: 1px solid #4e677d;
+  }
+}
