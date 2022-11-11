@@ -1,0 +1,39 @@
+.services {
+  padding-top: 150px;
+  background-color: rgb(226, 226, 147);
+}
+.services_titles {
+  position: relative;
+  &_items {
+    width: 100%;
+    max-width: 496px;
+    background-color: red;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20%;
+      background-image: url("../../images/services_triangle.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &_item_one {
+    font-family: "Newsreader";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 157%;
+    text-align: center;
+    letter-spacing: 1.16667px;
+    color: #4e677d;
+    opacity: 0.8;
+  }
+  &_item_two {
+    font-family: "Newsreader";
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #4e677d;
+  }
+}
