@@ -1,0 +1,113 @@
+.register_part {
+  position: relative;
+}
+.register_img {
+  width: 100%;
+  max-width: 1728px;
+  min-height: 1000px;
+}
+.register_inner {
+  position: absolute;
+  top: calc(50% + 700px);
+  left: calc(50%- 100px);
+  z-index: 1;
+  width: 100%;
+  max-width: 390px;
+  &_title {
+    margin-bottom: 55px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 145%;
+    text-transform: capitalize;
+    color: #4e677d;
+  }
+}
+.register_label {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 145%;
+  color: #4e677d;
+}
+.register_input {
+  padding: 15px 20px 15px 15px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #9b9b9b;
+}
+.register_input :focus {
+  border: 1px solid #aaaaaa;
+}
+.regiter_signin_btn {
+  margin-top: 63px;
+  margin-bottom: 34px;
+  padding: 13px 0;
+  background: #4e677d;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  color: #ffffff;
+}
+.regiter_google_link {
+  padding: 13px 0;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.333333px;
+  color: #4e677d;
+  &:hover {
+    color: #3a5268;
+  }
+}
+.question_link {
+  margin-top: 55px;
+  margin-bottom: 34px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+  &_colored {
+    color: #4e677d;
+    &:hover {
+      color: #41586d;
+    }
+  }
+}
+.forgot_password {
+  margin-bottom: 64px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.333333px;
+  color: #4e677d;
+  &:hover {
+    color: #314658;
+  }
+}
+.security {
+  margin-bottom: 97px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+  &:hover {
+    color: #838282;
+  }
+}

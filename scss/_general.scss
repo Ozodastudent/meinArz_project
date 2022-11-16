@@ -1,25 +1,25 @@
 /* GENERAL */
 
-*{
+* {
   box-sizing: border-box;
 }
 
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
-html{
+html {
   height: 100%;
   box-sizing: border-box;
 }
 
-img{
+img {
   display: block;
   height: auto;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -32,6 +32,9 @@ body{
 }
 
 /* STICKY-FOOTER */
-.site-main{
+.site-main {
   flex-grow: 1;
 }
+// main {
+//   display: none;
+// }

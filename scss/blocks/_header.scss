@@ -1,6 +1,7 @@
 .header {
+  // display: none;
   padding-top: 58px;
-  background-color: lightcoral;
+  // background-color: lightcoral;
   &_inner {
     display: flex;
     justify-content: space-between;
@@ -24,6 +25,9 @@
     letter-spacing: 1.16667px;
     color: #4e677d;
     text-decoration: none;
+    &:hover {
+      color: #5d778d;
+    }
   }
 }
 .active {
@@ -39,4 +43,8 @@
   text-decoration: none;
   background: #4e677d;
   border-radius: 5px;
+  &:hover {
+    color: white;
+    background: #668199;
+  }
 }

@@ -1,6 +1,8 @@
 .hero {
   padding-top: 126px;
-  background-color: rgb(163, 208, 209);
+  &_inner {
+    position: relative;
+  }
   &_parts {
     display: flex;
     justify-content: space-between;
@@ -48,7 +50,6 @@
   background-size: cover;
   background-position-x: calc(10% + 20px);
   background-position-y: calc(10% + 20px);
-  z-index: 1;
 }
 .hero_heart_icon {
   position: absolute;
@@ -59,4 +60,10 @@
   position: absolute;
   top: calc(50% - 290px);
   right: calc(50% - 280px);
+}
+.hero_third_part {
+  position: absolute;
+  top: calc(50% + 260px);
+  left: calc(50% - 600px);
+  z-index: 3;
 }
