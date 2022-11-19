@@ -1,18 +1,27 @@
 .register_part {
+  padding-top: 132px;
+  padding-left: 80px;
+  width: 100%;
+  max-width: 1728px;
   position: relative;
+  background-image: url("../../images/reg_bgimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: calc(50% - 175px);
 }
 .register_img {
+  margin: 0 auto;
   width: 100%;
   max-width: 1728px;
   min-height: 1000px;
 }
 .register_inner {
-  position: absolute;
-  top: calc(50% + 700px);
-  left: calc(50%- 100px);
-  z-index: 1;
   width: 100%;
   max-width: 390px;
+  // position: absolute;
+  // top: calc(50% - 400px);
+  // left: calc(50% - 480px);
+  // z-index: 1;
   &_title {
     margin-bottom: 55px;
     font-family: "Poppins";
@@ -40,8 +49,20 @@
   line-height: 145%;
   color: #9b9b9b;
 }
+.register_password {
+  padding-right: 151px;
+}
 .register_input :focus {
   border: 1px solid #aaaaaa;
+}
+.close_eye {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: calc(10% + 15px);
+  right: calc(10% - 20px);
+  border: none;
+  background-color: transparent;
 }
 .regiter_signin_btn {
   margin-top: 63px;
