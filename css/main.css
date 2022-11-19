@@ -511,21 +511,58 @@ body {
   color: #aaaaaa;
 }
 
+.details_radios {
+  margin-top: 43px;
+  margin-bottom: 28px;
+}
+
 .details_label {
+  position: relative;
+  padding: 15px 20px 60px 20px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 20px;
   line-height: 145%;
   color: #4e677d;
+  cursor: pointer;
+}
+.details_label + .details_label {
+  margin-left: 50px;
 }
 
-.form_card {
-  padding: 15px 20px 12px 20px;
-  border: 1px solid #aaaaaa;
-  border-radius: 10px;
+.details_radios input[type=radio] {
+  display: none;
 }
-.form_card + .form_card {
-  margin-left: 52px;
+
+.details_radios span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #4e677d;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 10px);
+}
+.details_radios span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #4e677d;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 300s ease-in-out 0s;
+  transition: 300s ease-in-out 0s;
+}
+
+.details_radios input[type=radio] ~ span::after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .select_card {
@@ -739,25 +776,91 @@ body {
 
 .hero_second_part {
   position: relative;
-  width: 490px;
-  height: 538px;
-  background-image: url("../../images/hero_circle.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: calc(10% + 20px);
-  background-position-y: calc(10% + 20px);
+}
+
+.checkup_box {
+  width: 186px;
+  height: 52px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 10px #e1e1ef;
+          box-shadow: 0px 1px 10px #e1e1ef;
+  border-radius: 10px;
+}
+
+.checkup_label {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 179.5%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  cursor: pointer;
+}
+
+.checkup_label input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  width: 14px;
+  height: 14px;
+  padding: 10px;
+  background-color: rgba(155, 154, 154, 0.541);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkup_label input[type=checkbox]::after {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.checkup_label input[type=checkbox]:hover {
+  background-color: lightgrey;
+}
+.checkup_label input[type=checkbox]:checked {
+  background-color: #4cd080;
+}
+.checkup_label input[type=checkbox]:checked::after {
+  display: block;
 }
 
 .hero_heart_icon {
   position: absolute;
-  top: calc(50% - 195px);
-  left: calc(50% - 145px);
+  top: calc(50% - 250px);
+  left: calc(50% - 175px);
 }
 
 .hero_curved_line {
   position: absolute;
-  top: calc(50% - 290px);
-  right: calc(50% - 280px);
+  top: calc(50% - 284px);
+  right: calc(50% - 315px);
+}
+
+.hero_heart_girlimg {
+  position: relative;
+}
+
+.hero_circle {
+  position: absolute;
+  top: calc(10% + 15px);
+  left: calc(10% - 23px);
+  z-index: -1;
 }
 
 .hero_third_part {

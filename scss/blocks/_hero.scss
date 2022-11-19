@@ -43,23 +43,76 @@
 }
 .hero_second_part {
   position: relative;
-  width: 490px;
-  height: 538px;
-  background-image: url("../../images/hero_circle.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: calc(10% + 20px);
-  background-position-y: calc(10% + 20px);
+}
+.checkup_box {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 186px;
+  height: 52px;
+  background: #ffffff;
+  box-shadow: 0px 1px 10px #e1e1ef;
+  border-radius: 10px;
+}
+.checkup_label {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 179.5%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  cursor: pointer;
+}
+.checkup_label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  width: 14px;
+  height: 14px;
+  padding: 10px;
+  background-color: rgba(155, 154, 154, 0.541);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    display: none;
+  }
+  &:hover {
+    background-color: lightgrey;
+  }
+  &:checked {
+    background-color: #4cd080;
+  }
+  &:checked::after {
+    display: block;
+  }
 }
 .hero_heart_icon {
   position: absolute;
-  top: calc(50% - 195px);
-  left: calc(50% - 145px);
+  top: calc(50% - 250px);
+  left: calc(50% - 175px);
 }
 .hero_curved_line {
   position: absolute;
-  top: calc(50% - 290px);
-  right: calc(50% - 280px);
+  top: calc(50% - 284px);
+  right: calc(50% - 315px);
+}
+.hero_heart_girlimg {
+  position: relative;
+}
+.hero_circle {
+  position: absolute;
+  top: calc(10% + 15px);
+  left: calc(10% - 23px);
+  z-index: -1;
 }
 .hero_third_part {
   position: absolute;

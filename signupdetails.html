@@ -21,16 +21,33 @@
               Who are you going to use this app as ?Then choose your primary
               country of residence, and language
             </p>
-            <form action="#" class="details_form">
-              <div class="d-flex">
-                <div class="form_card d-flex flex-column align-items-center">
-                  <label class="details_label" for="patient_id">Patient</label>
-                  <input id="patient_id" type="checkbox" />
-                </div>
-                <div class="form_card d-flex flex-column align-items-center">
-                  <label class="details_label" for="doctor_id">Doctor</label>
-                  <input id="doctor_id" type="checkbox" />
-                </div>
+            <form action="#" class="details_form" method="POST">
+              <div class="details_radios d-flex">
+                <label
+                  class="details_label d-flex flex-column align-items-center"
+                  for="patient_id"
+                >
+                  Patient
+                  <input
+                    id="patient_id"
+                    value="patient"
+                    type="radio"
+                    name="choose_option"
+                  />
+                  <span></span>
+                </label>
+                <label
+                  class="details_label d-flex flex-column align-items-center"
+                  for="doctor_id"
+                  >Doctor
+                  <input
+                    value="doctor"
+                    id="doctor_id"
+                    type="radio"
+                    name="choose_option"
+                  />
+                  <span></span>
+                </label>
               </div>
               <div class="select_card d-flex flex-column align-items-start">
                 <div class="d-flex flex-column align-items-start">

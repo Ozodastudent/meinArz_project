@@ -24,20 +24,54 @@
   line-height: 33px;
   color: #aaaaaa;
 }
+.details_radios {
+  margin-top: 43px;
+  margin-bottom: 28px;
+}
 .details_label {
+  position: relative;
+  padding: 15px 20px 60px 20px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 20px;
   line-height: 145%;
   color: #4e677d;
-}
-.form_card {
-  padding: 15px 20px 12px 20px;
-  border: 1px solid #aaaaaa;
-  border-radius: 10px;
+  cursor: pointer;
   & + & {
-    margin-left: 52px;
+    margin-left: 50px;
   }
+}
+.details_radios input[type="radio"] {
+  display: none;
+}
+// .details_radio {
+//   display: none;
+// }
+.details_radios span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #4e677d;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 10px);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #4e677d;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300s ease-in-out 0s;
+  }
+}
+.details_radios input[type="radio"] ~ span::after {
+  transform: translate(-50%, -50%) scale(1);
 }
 .select_card {
   font-family: "Poppins";
