@@ -779,6 +779,8 @@ body {
 }
 
 .checkup_box {
+  margin-top: 100px;
+  margin-left: 50px;
   width: 186px;
   height: 52px;
   background: #ffffff;
@@ -842,8 +844,8 @@ body {
 
 .hero_heart_icon {
   position: absolute;
-  top: calc(50% - 250px);
-  left: calc(50% - 175px);
+  top: calc(50% - 260px);
+  left: calc(50% - 245px);
 }
 
 .hero_curved_line {
