@@ -4,21 +4,15 @@
 }
 .services_titles {
   position: relative;
+  margin-bottom: 83px;
   &_items {
     width: 100%;
     max-width: 496px;
-    background-color: red;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 20%;
-      background-image: url("../../images/services_triangle.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
   }
   &_item_one {
+    background-image: url("../../images/services_textbg.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(10% + 130px);
     font-family: "Newsreader";
     font-weight: 700;
     font-size: 24px;
@@ -35,5 +29,43 @@
     line-height: 48px;
     text-align: center;
     color: #4e677d;
+  }
+}
+.services_cards_box {
+  position: relative;
+  margin-top: 70px;
+}
+.services_cards_item {
+  width: 275px;
+  text-align: center;
+}
+.cards_item_title {
+  margin-top: 15px;
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+.cards_item_desc {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+.cards_item_link {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  border-bottom: 1px solid #4e677d;
+  &:hover {
+    color: #40586d;
   }
 }

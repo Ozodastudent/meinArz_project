@@ -845,7 +845,7 @@ body {
 .hero_heart_icon {
   position: absolute;
   top: calc(50% - 260px);
-  left: calc(50% - 245px);
+  left: calc(50% - 145px);
 }
 
 .hero_curved_line {
@@ -861,7 +861,7 @@ body {
 .hero_circle {
   position: absolute;
   top: calc(10% + 15px);
-  left: calc(10% - 23px);
+  left: calc(10% - 30px);
   z-index: -1;
 }
 
@@ -876,9 +876,8 @@ body {
   background-image: url("../../images/consult1.png");
   background-repeat: no-repeat;
   background-size: 213px;
-  background-position-y: calc(50% - 10px);
+  background-position-y: calc(50% - 48px);
   padding-top: 127px;
-  background-color: rgb(243, 159, 225);
 }
 
 .consulting_inner {
@@ -952,22 +951,16 @@ body {
 
 .services_titles {
   position: relative;
+  margin-bottom: 83px;
 }
 .services_titles_items {
   width: 100%;
   max-width: 496px;
-  background-color: red;
-}
-.services_titles_items::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 20%;
-  background-image: url("../../images/services_triangle.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .services_titles_item_one {
+  background-image: url("../../images/services_textbg.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(10% + 130px);
   font-family: "Newsreader";
   font-weight: 700;
   font-size: 24px;
@@ -984,4 +977,47 @@ body {
   line-height: 48px;
   text-align: center;
   color: #4e677d;
+}
+
+.services_cards_box {
+  position: relative;
+  margin-top: 70px;
+}
+
+.services_cards_item {
+  width: 275px;
+  text-align: center;
+}
+
+.cards_item_title {
+  margin-top: 15px;
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+
+.cards_item_desc {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+
+.cards_item_link {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  border-bottom: 1px solid #4e677d;
+}
+.cards_item_link:hover {
+  color: #40586d;
 }/*# sourceMappingURL=main.css.map */
