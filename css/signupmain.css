@@ -37,4 +37,14 @@
   padding: 15px 15px 15px 15px;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
-}/*# sourceMappingURL=signup_main.css.map */
+}
+
+.signup_close_eye {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: calc(10% + 15px);
+  right: calc(10% - 20px);
+  border: none;
+  background-color: transparent;
+}/*# sourceMappingURL=signupmain.css.map */

@@ -518,7 +518,7 @@ body {
 
 .details_label {
   position: relative;
-  padding: 15px 20px 60px 20px;
+  padding: 15px 20px 12px 20px;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
   font-family: "Poppins";
@@ -533,6 +533,7 @@ body {
 }
 
 .details_radios input[type=radio] {
+  margin-top: 30px;
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -565,6 +566,7 @@ body {
 }
 
 .select_card {
+  margin-bottom: 58px;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 18px;
@@ -588,12 +590,7 @@ body {
 }
 
 .details_btn {
-  width: 100%;
-  max-width: 380px;
-  height: 56px;
-  margin-top: 58px;
-  margin-bottom: 49px;
-  padding: 13px 0;
+  padding: 13px 143px;
   background: #4e677d;
   text-decoration: none;
   border-radius: 10px;
@@ -605,14 +602,17 @@ body {
 }
 .details_btn:hover {
   background-color: rgba(78, 103, 125, 0.8156862745);
+  color: #ffffff;
 }
 
 .details_question_link {
+  margin-top: 48px;
   margin-bottom: 37px;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+  text-align: center;
   letter-spacing: -0.333333px;
   color: #9b9b9b;
 }
@@ -674,6 +674,47 @@ body {
   text-align: center;
   letter-spacing: -0.486762px;
   color: #313946;
+}
+
+.sign_main {
+  padding-top: 157px;
+  padding-bottom: 124px;
+}
+
+.sign_main_left {
+  width: 100%;
+  max-width: 450px;
+}
+
+.sign_main_left_title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 145%;
+  text-transform: capitalize;
+  color: #4e677d;
+}
+
+.sign_main_left_desc {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #aaaaaa;
+}
+
+.user_labels {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 145%;
+  color: #4e677d;
+}
+
+.user_inputs {
+  padding: 15px 15px 15px 15px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
 }
 
 .register_part {

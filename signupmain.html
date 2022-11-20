@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Sign Up Main</title>
+  </head>
+  <body>
+    <main>
+      <div class="sign_main">
+        <div class="containers">
+          <div class="sign_main_inner">
+            <div class="sign_main_left">
+              <h3 class="sign_main_left_title">Sign up</h3>
+              <p class="sign_main_left_desc">Please fill out the form below</p>
+              <form
+                class="sign_main_left_form d-flex flex-column"
+                method="POST"
+              >
+                <label class="user_name user_labels d-flex flex-column"
+                  >Full Name
+                  <input
+                    class="user_name_input user_inputs"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Akbarali Nabiev"
+                  />
+                </label>
+                <label class="user_email user_labels d-flex flex-column my-4">
+                  Email
+                  <input
+                    type="email"
+                    class="user_email_input user_inputs"
+                    placeholder="example@gmail.com"
+                    required
+                  />
+                </label>
+                <div class="position-relative">
+                  <label class="user_password user_labels d-flex flex-column">
+                    Password
+                    <input
+                      type="password"
+                      class="user_inputs"
+                      placeholder="At least 8 charachters"
+                    />
+                    <button type="button" class="signup_close_eye">
+                      <img src="./images/close_eye.png" alt="close eye img" />
+                    </button>
+                  </label>
+                </div>
+              </form>
+              <p class="details_question_link">
+                Already have an account ?
+                <a
+                  href="./signin.html"
+                  class="question_link_colored text-decoration-none"
+                >
+                  Sign In
+                </a>
+              </p>
+              <p class="details_security">
+                Our
+                <a href="#" class="text-decoration-none question_link_colored"
+                  >Terms of Service</a
+                >
+                apply. For more info on our data processing, see our
+                <a href="#" class="text-decoration-none question_link_colored"
+                  >Privacy Policy</a
+                >
+              </p>
+            </div>
+            <div class="sign_main_right"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
