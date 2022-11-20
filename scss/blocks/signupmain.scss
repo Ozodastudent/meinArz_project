@@ -53,30 +53,40 @@
   border: 1px solid #aaaaaa;
   border-radius: 50px;
 }
-.radio_text {
-  // padding: 10px 21px;
+.radio_label {
+  height: 180px;
+  height: 250px;
   border-radius: 50px;
+  color: rgba(51, 51, 51, 0.6);
+}
+.radio_label input[type="radio"] {
+  // appearance: none;
+  // -webkit-appearance: none;
+}
+.radio_male::after {
+  content: "\f222";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 16px;
+}
+.radio_female::after {
+  content: "\f221";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 16px;
+}
+.radio_other::after {
+  content: "\f224";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 16px;
+}
+.radio_text {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: -0.333333px;
-  color: rgba(51, 51, 51, 0.6);
-}
-.radio_label input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  // width: 50px;
-  // height: 50px;
-  // background: #4e677d;
-  // padding: 10px 21px;
-  &::after {
-    content: "\f222";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 16px;
-    color: #fff;
-  }
 }
 .radio_label input[type="radio"]:checked + .radio_label {
   background-color: red;
