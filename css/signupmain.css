@@ -1,6 +1,7 @@
 .sign_main {
   padding-top: 157px;
   padding-bottom: 124px;
+  background-color: #f5f7fb;
 }
 
 .sign_main_left {
@@ -43,8 +44,18 @@
   width: 15px;
   height: 12px;
   position: absolute;
-  top: calc(10% + 15px);
+  top: calc(10% + 35px);
   right: calc(10% - 20px);
   border: none;
   background-color: transparent;
+}
+
+.user_signup_btn {
+  background: #4e677d;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  color: #ffffff;
 }/*# sourceMappingURL=signupmain.css.map */
