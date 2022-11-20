@@ -1,6 +1,11 @@
 .services {
+  position: relative;
   padding-top: 150px;
-  background-color: rgb(143, 214, 76);
+}
+.services_plus {
+  position: absolute;
+  top: calc(10% + 180px);
+  right: 0;
 }
 .services_titles {
   position: relative;
@@ -53,6 +58,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 157%;
+  text-align: center;
   letter-spacing: 0.5px;
   color: #4e677d;
   opacity: 0.8;

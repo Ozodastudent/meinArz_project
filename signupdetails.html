@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="./bootstrap-5.0.2/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Details</title>
   </head>
@@ -15,69 +22,102 @@
     <main>
       <section class="details_part">
         <div class="containers">
-          <div class="details_left">
-            <h4 class="details_left_title">Specify Your Details</h4>
-            <p class="details_left_desc">
-              Who are you going to use this app as ?Then choose your primary
-              country of residence, and language
-            </p>
-            <form action="#" class="details_form" method="POST">
-              <div class="details_radios d-flex">
-                <label
-                  class="details_label d-flex flex-column align-items-center"
-                  for="patient_id"
-                >
-                  Patient
-                  <input
-                    id="patient_id"
-                    value="patient"
-                    type="radio"
-                    name="choose_option"
-                  />
-                  <span></span>
-                </label>
-                <label
-                  class="details_label d-flex flex-column align-items-center"
-                  for="doctor_id"
-                  >Doctor
-                  <input
-                    value="doctor"
-                    id="doctor_id"
-                    type="radio"
-                    name="choose_option"
-                  />
-                  <span></span>
-                </label>
-              </div>
-              <div class="select_card d-flex flex-column align-items-start">
-                <div class="d-flex flex-column align-items-start">
-                  <label for="country_id" class="country_label"
-                    >Choose your country</label
+          <div class="details_inner d-flex justify-content-between">
+            <div class="details_left">
+              <h4 class="details_left_title">Specify Your Details</h4>
+              <p class="details_left_desc">
+                Who are you going to use this app as ?Then choose your primary
+                country of residence, and language
+              </p>
+              <form action="#" class="details_form" method="POST">
+                <div class="details_radios d-flex">
+                  <label
+                    class="details_label d-flex flex-column align-items-center"
+                    for="patient_id"
                   >
-                  <select
-                    class="country_select details_select"
-                    name="country select"
-                    id="country_id"
-                  >
-                    <option value="" selected>Choose</option>
-                  </select>
+                    Patient
+                    <input
+                      id="patient_id"
+                      value="patient"
+                      type="radio"
+                      name="choose_option"
+                    />
+                  </label>
+                  <label
+                    class="details_label d-flex flex-column align-items-center"
+                    for="doctor_id"
+                    >Doctor
+                    <input
+                      value="doctor"
+                      id="doctor_id"
+                      type="radio"
+                      name="choose_option"
+                    />
+                  </label>
                 </div>
-                <div class="d-flex flex-column align-items-start">
-                  <label for="language_id" class="language_label"
-                    >Choose language</label
-                  >
-                  <select
-                    class="language_select details_select"
-                    name="language select"
-                    id="language_id"
-                  >
-                    <option value="" selected>Choose</option>
-                  </select>
+                <div class="select_card d-flex flex-column align-items-start">
+                  <div class="d-flex flex-column align-items-start">
+                    <label for="country_id" class="country_label"
+                      >Choose your country</label
+                    >
+                    <select
+                      class="country_select details_select"
+                      name="country select"
+                      id="country_id"
+                    >
+                      <option value="">Choose</option>
+                    </select>
+                  </div>
+                  <div class="d-flex flex-column align-items-start">
+                    <label for="language_id" class="language_label"
+                      >Choose language</label
+                    >
+                    <select
+                      class="language_select details_select"
+                      name="language select"
+                      id="language_id"
+                    >
+                      <option value="">Choose</option>
+                    </select>
+                  </div>
                 </div>
+                <a href="./signupmain.html" class="details_btn">Continue</a>
+                <p class="details_question_link">
+                  Already have an account ?
+                  <a
+                    href="./signupdetails.html"
+                    class="question_link_colored text-decoration-none"
+                  >
+                    Sign In
+                  </a>
+                </p>
+                <p class="details_security">
+                  Our
+                  <a href="#" class="text-decoration-none question_link_colored"
+                    >Terms of Service</a
+                  >
+                  apply. For more info on our data processing, see our
+                  <a href="#" class="text-decoration-none question_link_colored"
+                    >Privacy Policy</a
+                  >
+                </p>
+              </form>
+            </div>
+            <div class="details_right">
+              <div>
+                <img src="./images/details_img.png" alt="" />
               </div>
-            </form>
+              <div class="details_right_text">
+                <h5 class="details_right_text_title">
+                  See a doctor in minutes
+                </h5>
+                <p class="details_right_text_desc">
+                  A complete health app that allows customers to get diagnosed
+                  via their phones
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="details_right"></div>
         </div>
       </section>
     </main>
