@@ -856,6 +856,7 @@ body {
 }
 
 .user_inputs {
+  margin-top: 3px;
   padding: 15px 15px 15px 15px;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
@@ -869,6 +870,24 @@ body {
   right: calc(10% - 20px);
   border: none;
   background-color: transparent;
+}
+
+.radio_group {
+  padding: 5px;
+  border: 1px solid #aaaaaa;
+  border-radius: 50px;
+}
+
+.radio_label input[type=radio] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+.radio_label {
+  padding: 10px 21px;
+  background: #4e677d;
+  border-radius: 50px;
 }
 
 .user_signup_btn {
