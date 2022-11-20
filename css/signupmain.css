@@ -51,6 +51,11 @@
 }
 
 .user_signup_btn {
+  margin-top: 55px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+  border: none;
+  background-color: transparent;
   background: #4e677d;
   border-radius: 10px;
   font-family: "Poppins";

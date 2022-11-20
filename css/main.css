@@ -822,7 +822,7 @@ body {
 .sign_main {
   padding-top: 157px;
   padding-bottom: 124px;
-  background-color: rgb(146, 24, 24);
+  background-color: #f5f7fb;
 }
 
 .sign_main_left {
@@ -865,10 +865,25 @@ body {
   width: 15px;
   height: 12px;
   position: absolute;
-  top: calc(10% + 25px);
+  top: calc(10% + 35px);
   right: calc(10% - 20px);
   border: none;
   background-color: transparent;
+}
+
+.user_signup_btn {
+  margin-top: 55px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+  border: none;
+  background-color: transparent;
+  background: #4e677d;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  color: #ffffff;
 }
 
 .hero {
