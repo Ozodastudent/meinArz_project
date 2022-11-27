@@ -2,12 +2,92 @@
   position: relative;
   padding-top: 150px;
 }
+.services_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services_page {
+  padding-bottom: 160px;
+}
 .services_plus {
   position: absolute;
   top: calc(10% + 180px);
   right: 0;
 }
+// search part
+.search_part {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search_part_title_box {
+  margin-bottom: 51px;
+  width: 100%;
+  max-width: 466px;
+}
+.search_part_title {
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  color: #4e677d;
+}
+.search_form {
+  display: flex;
+  align-items: center;
+}
+.search_input {
+  width: 556px;
+  height: 54px;
+  padding-left: 56px;
+  border: none;
+  background: #f7f7f7;
+  border-radius: 5px;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+  background-image: url("../../images/search_icon.png");
+  background-repeat: no-repeat;
+  background-position: 13px 10px;
+}
+.search_btn {
+  margin-left: 35px;
+  padding: 12.5px 32px;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  border: none;
+  background: #4e677d;
+  border-radius: 10px;
+}
+.search_plus {
+  position: absolute;
+  top: calc(5% + 25px);
+  right: calc(10% - 195px);
+}
+.search_text {
+  margin-top: 70px;
+  font-family: "Blinker";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 157%;
+  color: #8d9dab;
+}
 .services_titles {
+  display: flex;
+  justify-content: center;
   position: relative;
   margin-bottom: 15px;
   &_items {
@@ -37,11 +117,35 @@
     color: #4e677d;
   }
 }
+.services_cards {
+  position: relative;
+  margin-bottom: 76px;
+}
+.services_cards_plus {
+  width: 147px;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(10% - 200px);
+}
+.services_cards_plus2 {
+  width: 147px;
+  position: absolute;
+  bottom: calc(10% - 220px);
+  right: calc(10% - 185px);
+}
 .services_cards_box {
   position: relative;
   margin-top: 68px;
 }
+.services_cards_list {
+  list-style: none;
+  min-height: 700px;
+  padding-left: 80px;
+}
 .services_cards_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 275px;
 }
 .cards_item_title {
@@ -69,9 +173,22 @@
   font-size: 18px;
   line-height: 157%;
   letter-spacing: 1.16667px;
+  text-decoration: none;
   color: #4e677d;
   border-bottom: 1px solid #4e677d;
   &:hover {
     color: #40586d;
+  }
+}
+.services_link {
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 157%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  border-bottom: 1px solid #4e677d;
+  &:hover {
+    color: #4e677dda;
   }
 }

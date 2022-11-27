@@ -1,1 +1,88 @@
-
+footer {
+  position: relative;
+  background-color: #faf5ec;
+}
+.footer_inner {
+  padding-top: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_logo {
+  text-decoration: none;
+}
+.footer_one {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_one_text {
+  margin-top: 42px;
+  font-family: "Newsreader";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 163%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+.footer_dots {
+  margin-top: -40px;
+  width: 253px;
+}
+.footer_two {
+  display: flex;
+}
+.footer_two_nav {
+  list-style: none;
+  & + & {
+    margin-left: 114px;
+  }
+}
+.footer_two_nav_title {
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  color: #4e677d;
+}
+.footer_two_link {
+  text-decoration: none;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 175%;
+  color: rgba(78, 103, 125, 0.8);
+  &:hover {
+    color: rgba(78, 103, 125, 0.644);
+  }
+}
+.footer_three_icons {
+  display: flex;
+  list-style: none;
+}
+.footer_icons_item {
+  margin-left: -30px;
+  & + & {
+    margin-left: 21px;
+  }
+}
+.footer_copyright {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 180px);
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.0117em;
+  color: #4e677d;
+}
+.footer_director {
+  position: absolute;
+  bottom: calc(10% + 30px);
+  right: calc(5% - 40px);
+}
+.footer_director_btn {
+  text-decoration: none;
+}
