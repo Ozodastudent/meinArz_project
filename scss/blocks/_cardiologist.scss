@@ -1,0 +1,68 @@
+.cardiolog_header {
+  padding-top: 56px;
+  margin-bottom: 207px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardiolog_hero {
+  padding-bottom: 169px;
+}
+.cardiolog_cards {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cardiolog_cards_item {
+  margin-top: 60px;
+  padding: 27px 20px 30px 20px;
+  width: 100%;
+  max-width: 550px;
+  border: 0.5px solid #4e677d;
+  border-radius: 15px;
+}
+.cardiolog_info {
+  display: flex;
+  align-items: center;
+  &_text {
+    margin-left: 25px;
+  }
+}
+.cardilog_name {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 15%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+.cardiolog_job {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 17%;
+  letter-spacing: 1.16667px;
+  color: #fd7265;
+}
+.cardiolog_desc {
+  margin-bottom: 46px;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+.cardilog_link {
+  text-decoration: none;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  text-align: center;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  border-bottom: 1px solid #4e677d;
+}

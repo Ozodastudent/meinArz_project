@@ -383,10 +383,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
-  /* line-height: var(--main-line-height); */
+  background-color: #fcfcfd;
 }
 
 /* STICKY-FOOTER */
@@ -1618,6 +1615,98 @@ body {
   top: calc(20% + 43px);
   right: calc(10% - 130px);
   height: 310px;
+}
+
+.cardiolog_header {
+  padding-top: 56px;
+  margin-bottom: 207px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardiolog_hero {
+  padding-bottom: 169px;
+}
+
+.cardiolog_cards {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cardiolog_cards_item {
+  margin-top: 60px;
+  padding: 27px 20px 30px 20px;
+  width: 100%;
+  max-width: 550px;
+  border: 0.5px solid #4e677d;
+  border-radius: 15px;
+}
+
+.cardiolog_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cardiolog_info_text {
+  margin-left: 25px;
+}
+
+.cardilog_name {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 15%;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+}
+
+.cardiolog_job {
+  font-family: "Blinker";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 17%;
+  letter-spacing: 1.16667px;
+  color: #fd7265;
+}
+
+.cardiolog_desc {
+  margin-bottom: 46px;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+
+.cardilog_link {
+  text-decoration: none;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157%;
+  text-align: center;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  border-bottom: 1px solid #4e677d;
 }
 
 footer {
