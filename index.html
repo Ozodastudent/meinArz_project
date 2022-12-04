@@ -16,6 +16,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <title>Mein Arzt</title>
   </head>
   <body>
@@ -24,7 +26,7 @@
       <div class="containers">
         <div class="header_inner">
           <a href="#" class="logo">
-            <img src="./images/logo.png" alt="mein arzt logo" />
+            <img class="logo_img" src="./images/logo.png" alt="mein arzt logo" />
           </a>
           <ul class="nav">
             <li class="nav_item">
@@ -53,12 +55,17 @@
                     src="./images/stars.png"
                     alt="rating stars"
                   />
+                  <img
+                    class="hero_first_part_img_tablet"
+                    src="./images/tablet_stars.png"
+                    alt="rating stars"
+                  />
                 </a>
                 <h1 class="hero_first_part_title">
                   Your Health Is Our Top Priority
                 </h1>
                 <div class="hero_first_part_desc_box">
-                  <p class="hero_first_part_desc text-center">
+                  <p class="hero_first_part_desc">
                     We Provide All Health Care Solutions
                   </p>
                 </div>
@@ -70,7 +77,7 @@
               </div>
               <div class="hero_second_part">
                 <div class="hero_heart_icon">
-                  <img src="./images/Heart_Icon.png" alt="heart icon here" />
+                  <img class="hert_icon_img" src="./images/Heart_Icon.png" alt="heart icon here" />
                 </div>
                 <!-- <div class="check_card d-flex">
                   <div class="checkup_box">
@@ -86,36 +93,36 @@
                     </label>
                   </div>
                 </div> -->
-                <div class="hero_heart_girlimg">
+                <div class="hero_second_girlimg">
                   <img
                     class="hero_circle"
                     src="./images/hero_circle.png"
                     alt="circle"
                   />
-                  <img src="./images/hero_girlimg.png" alt="girl image here" />
+                  <img class="hero_second_girl_img" src="./images/hero_girlimg.png" alt="girl image here" />
                 </div>
                 <div class="hero_curved_line">
-                  <img src="./images/yellow_curve.png" alt="curved line here" />
+                  <img class="curved_line_img" src="./images/yellow_curve.png" alt="curved line here" />
                 </div>
               </div>
             </div>
             <div
-              class="hero_third_part d-flex align-items-center justify-content-between"
+              class="hero_third_part"
             >
-              <a href="index.html" class="hero_third_part_link"
-                ><img src="./images/hero_star.png" alt="emlem Health" />
-              </a>
-              <a href="index.html" class="hero_third_part_link">
-                <img src="./images/med_img1.png" alt="med spa" />
-              </a>
-              <a href="index.html" class="hero_third_part_link">
-                <img src="./images/medimg2.png" alt="providece" /> </a
-              ><a href="index.html" class="hero_third_part_link"
-                ><img src="./images/medimg3.png" alt="family clinic"
-              /></a>
-              <a href="index.html" class="hero_third_part_link"
-                ><img src="./images/medimg4.png" alt="renew"
-              /></a>
+              <div class="hero_third_part_cards"
+                ><img class="hero_third_part_img_one" src="./images/hero_star.png" alt="emlem Health" />
+              </div>
+              <div class="hero_third_part_cards">
+                <img class="hero_third_part_img_two" src="./images/med_img1.png" alt="med spa" />
+              </div>
+              <div class="hero_third_part_cards">
+                <img class="hero_third_part_img_three" src="./images/medimg2.png" alt="providece" /> </div
+              ><div class="hero_third_part_cards"
+                ><img class="hero_third_part_img_four" src="./images/medimg3.png" alt="family clinic"
+              /></div>
+              <div class="hero_third_part_cards"
+                ><img class="hero_third_part_img_five" src="./images/medimg4.png" alt="renew"
+              /></div>
             </div>
           </div>
         </div>
@@ -196,7 +203,7 @@
         </div>
       </section>
       <!-- our Services part -->
-      <section class="services">
+      <section class="services d-none">
         <img
           class="services_plus"
           src="./images/services_plus.png"
@@ -333,7 +340,7 @@
         </div>
       </section>
       <!-- about us part -->
-      <section class="about">
+      <section class="about d-none">
         <img
           class="about_plus"
           src="./images/about_plus.png"
@@ -398,9 +405,68 @@
             </div>
           </div>
       </section>
+      <article class="opinion_part d-none">
+        <img class="opinion_part_plus" src="./images/opinion_plus.png" alt="">
+        <div class="containers">
+          <div class="opinion_part_inner">
+            <div class="opinion_titles mx-auto">
+              <h4 class="opinion_title_one">Testimonals</h4>
+              <h3 class="opinion_title_two">See what Are The  Patients
+                Saying About Us</h3>
+              </div>
+              <!-- carusel part -->
+              <ul class="opinion_cards_list list-unstyled position-relative">
+                <li class="opinion_card d-flex justify-content-between">
+                  <div class="opinion_card_left">
+                    <img src="./images/opinion_people.png" alt="people images">
+                  </div>
+                  <div class="opinion_card_right d-flex flex-column">
+                    <img width="69" height="53" src="./images/opinion_quotes.png" alt="quotation mark">
+                    <div class="opinion_card_right_comments">
+                      <img width="190" height="34" src="./images/opinion_stars.png" alt="stars image">
+                      <p class="opinion_card_right_desc">“ What a wonderful experience! I can’t thank  enough for the Mein Arzt Online
+                        Med-Consultant ,,</p>        
+                      </div>
+  <p class="opinion_card_right_author">— Olivia Skyler</p>
+                  </div>
+                </li>
+                <li class="opinion_card d-flex justify-content-between">
+                  <div class="opinion_card_left">
+                    <img src="./images/opinion_people.png" alt="people images">
+                  </div>
+                  <div class="opinion_card_right d-flex flex-column">
+                    <img width="69" height="53" src="./images/opinion_quotes.png" alt="quotation mark">
+                    <div class="opinion_card_right_comments">
+                      <img width="190" height="34" src="./images/opinion_stars.png" alt="stars image">
+                      <p class="opinion_card_right_desc">“ What a wonderful experience! I can’t thank  enough for the Mein Arzt Online
+                        Med-Consultant ,,</p>        
+                      </div>
+  <p class="opinion_card_right_author">— Olivia Skyler</p>
+                  </div>
+                </li>
+                <li class="opinion_card d-flex justify-content-between">
+                  <div class="opinion_card_left">
+                    <img src="./images/opinion_people.png" alt="people images">
+                  </div>
+                  <div class="opinion_card_right d-flex flex-column">
+                    <img width="69" height="53" src="./images/opinion_quotes.png" alt="quotation mark">
+                    <div class="opinion_card_right_comments">
+                      <img width="190" height="34" src="./images/opinion_stars.png" alt="stars image">
+                      <p class="opinion_card_right_desc">“ What a wonderful experience! I can’t thank  enough for the Mein Arzt Online
+                        Med-Consultant ,,</p>        
+                      </div>
+                  <p class="opinion_card_right_author">— Olivia Skyler</p>
+                  </div>
+                </li>
+  
+              </ul>
+    </div>
+  </div>
+  <img src="./images/opinion_plus2.png" alt="plus image" class="opinion_part_plus2">
+      </article>
     </main>
     <!-- footer part -->
-    <footer>
+    <footer class="d-none">
       <div class="containers">
         <div class="footer_inner">
           <div class="footer_one">
@@ -459,5 +525,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

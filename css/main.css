@@ -443,7 +443,7 @@ body {
   list-style: none;
 }
 .nav_item + .nav_item {
-  margin-left: 95px;
+  margin-left: 70px;
 }
 .nav_link {
   font-family: "Blinker";
@@ -463,7 +463,7 @@ body {
 }
 
 .login_btn {
-  padding: 5px 30px;
+  padding: 10px 26px;
   font-family: "Blinker";
   font-weight: 600;
   font-size: 20px;
@@ -471,13 +471,27 @@ body {
   color: #ffffff;
   text-decoration: none;
   background: #4e677d;
-  border-radius: 5px;
+  border-radius: 10px 10px 0px 10px;
 }
 .login_btn:hover {
   color: white;
   background: #668199;
 }
 
+@media only screen and (max-width: 1100px) {
+  .logo_img {
+    width: 103px;
+  }
+  .nav_item + .nav_item {
+    margin-left: 50px;
+  }
+  .nav_link {
+    font-size: 18px;
+  }
+  .login_btn {
+    font-size: 18px;
+  }
+}
 .register_part {
   padding-top: 132px;
   padding-left: 80px;
@@ -969,6 +983,7 @@ body {
 .hero_first_part_desc {
   margin-top: -30px;
   font-family: "Blinker";
+  text-align: center;
   font-weight: 600;
   font-size: 26px;
   line-height: 179.5%;
@@ -980,9 +995,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero_first_part_img_tablet {
+  display: none;
+}
 
 .hero_first_part_shape {
-  margin-top: 87px;
+  margin-top: 54px;
 }
 
 .hero_second_part {
@@ -1073,22 +1091,139 @@ body {
 }
 
 .hero_third_part {
-  position: absolute;
-  top: calc(50% + 260px);
-  left: calc(50% - 600px);
-  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+@media only screen and (max-width: 1300px) {
+  .hero_first_part {
+    width: 100%;
+    max-width: 470px;
+  }
+  .hero_first_part_title {
+    font-size: 55px;
+  }
+  .hero_circle {
+    display: none;
+  }
+  .hero_second_girl_img {
+    width: 382px;
+    height: 423px;
+  }
+  .hero_curved_line {
+    position: absolute;
+    top: calc(50% - 244px);
+    right: calc(50% - 225px);
+  }
+  .curved_line_img {
+    width: 111px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hero_first_part {
+    width: 100%;
+    max-width: 350px;
+  }
+  .hero_first_part_title {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .hero_first_part_desc {
+    font-size: 18px;
+    text-align: start;
+  }
+  .hero_first_part_img {
+    display: none;
+  }
+  .hero_first_part_img_tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero_heart_icon {
+    position: absolute;
+    top: calc(50% - 180px);
+    left: calc(50% - 85px);
+  }
+  .hert_icon_img {
+    width: 44px;
+  }
+  .hero_circle {
+    display: none;
+  }
+  .hero_second_girl_img {
+    width: 312px;
+    height: 343px;
+  }
+  .hero_curved_line {
+    position: absolute;
+    top: calc(50% - 194px);
+    right: calc(50% - 205px);
+  }
+  .curved_line_img {
+    width: 111px;
+  }
+  .hero_third_part_img_one {
+    width: 199px;
+    height: 119px;
+  }
+  .hero_third_part_img_two {
+    width: 160px;
+    height: 160px;
+  }
+  .hero_third_part_img_three {
+    width: 174px;
+    height: 93px;
+  }
+  .hero_third_part_img_four {
+    width: 181px;
+    height: 146px;
+  }
+  .hero_third_part_img_five {
+    width: 171px;
+    height: 171px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hero_third_part_img_one {
+    width: 170px;
+    height: 80px;
+  }
+  .hero_third_part_img_two {
+    width: 135px;
+    height: 135px;
+  }
+  .hero_third_part_img_three {
+    width: 150px;
+    height: 68px;
+  }
+  .hero_third_part_img_four {
+    width: 154px;
+    height: 120px;
+  }
+  .hero_third_part_img_five {
+    width: 143px;
+    height: 143px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .hero_third_part {
+    display: none;
+  }
+}
 .consulting {
   background-image: url("../../images/consult1.png");
   background-repeat: no-repeat;
   background-size: 213px;
-  background-position-y: calc(50% - 48px);
-  padding-top: 127px;
-}
-
-.consulting_inner {
-  padding-top: 280px;
+  background-position-y: calc(50% - 78px);
+  padding-top: 139px;
 }
 
 .consulting_photo_title {
@@ -1108,6 +1243,10 @@ body {
   letter-spacing: 1.16667px;
   color: #4e677d;
   border-bottom: 1px solid #4e677d;
+}
+.consulting_photo_link:hover {
+  color: #5e788f;
+  border-bottom: 1px solid #5c768d;
 }
 
 .consulting_photo_img {
@@ -1151,6 +1290,55 @@ body {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 1300px) {
+  .consulting {
+    background-color: rgb(172, 147, 147);
+    padding-top: 46px;
+    background-image: url("../../images/consult1.png");
+    background-position-y: calc(10% + 60px);
+    background-size: 109px;
+  }
+  .consulting_photo_img {
+    width: 340px;
+    height: 260px;
+  }
+  .consulting_desc {
+    width: 100%;
+    max-width: 470px;
+    background-color: pink;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .consulting {
+    background-color: red;
+    padding-top: 46px;
+    background-image: url("../../images/consult1.png");
+    background-size: 109px;
+  }
+  .consulting_photo_title {
+    font-size: 24px;
+  }
+  .consulting_photo_img {
+    width: 319px;
+    height: 244px;
+  }
+  .consulting_photo_link {
+    font-size: 18px;
+  }
+  .consulting_desc {
+    width: 100%;
+    max-width: 410px;
+  }
+  .consulting_desc_number {
+    font-size: 20px;
+  }
+  .consulting_desc_title {
+    font-size: 18px;
+  }
+  .consulting_desc_text {
+    font-size: 16px;
+  }
+}
 .services {
   position: relative;
   padding-top: 150px;
@@ -1615,6 +1803,101 @@ body {
   top: calc(20% + 43px);
   right: calc(10% - 130px);
   height: 310px;
+}
+
+.opinion_part {
+  position: relative;
+  padding-top: 107px;
+  padding-bottom: 255px;
+}
+
+.opinion_part_plus {
+  position: absolute;
+  top: calc(15% + 15px);
+  left: 0;
+}
+
+.opinion_part_plus2 {
+  position: absolute;
+  top: calc(50% - 70px);
+  right: 0;
+}
+
+.opinion_titles {
+  position: relative;
+  width: 100%;
+  max-width: 421px;
+}
+.opinion_titles::before {
+  content: url("../../images/opinion_triangle.png");
+  top: calc(10% - 90px);
+  right: calc(10% - 200px);
+  position: absolute;
+}
+
+.opinion_cards_list {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.opinion_title_one {
+  background-image: url("../../images/services_textbg.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(10% + 95px);
+  font-family: "Newsreader";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 157%;
+  text-align: center;
+  letter-spacing: 1.16667px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+
+.opinion_title_two {
+  margin-top: 28px;
+  font-family: "Newsreader";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 145%;
+  text-align: center;
+  color: #4e677d;
+}
+
+.opinion_card_right_comments {
+  width: 100%;
+  max-width: 412px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.opinion_card_right_desc {
+  margin-top: 11px;
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 145%;
+  letter-spacing: 0.5px;
+  color: #4e677d;
+  opacity: 0.8;
+}
+
+.opinion_card_right_author {
+  font-family: "Blinker";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 157%;
+  color: #4e677d;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
 }
 
 .cardiolog_header {
