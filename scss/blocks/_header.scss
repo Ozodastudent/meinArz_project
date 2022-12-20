@@ -1,5 +1,6 @@
 .header {
   padding-top: 58px;
+  background-color: darkcyan;
   &_inner {
     display: flex;
     justify-content: space-between;
@@ -28,6 +29,9 @@
     }
   }
 }
+.toggle_close_btn {
+  display: none;
+}
 .active {
   border-bottom: 2px solid rgba(78, 103, 125, 1);
 }
@@ -46,9 +50,20 @@
     background: #668199;
   }
 }
-
+.mobile_nav_icons {
+  display: none;
+}
+.toggle_open_btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../images/toggle_open.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
 // responsive part
-
 @media only screen and (max-width: 1100px) {
   .logo_img {
     width: 103px;
@@ -65,5 +80,91 @@
   }
   .login_btn {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav_register_button {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+    max-width: 903px;
+    height: 407px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding-top: 115px;
+    padding-left: 36px;
+    padding-right: 22px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #4e677d;
+    &_item {
+      & + & {
+        margin-left: 0px;
+        margin-top: 17px;
+      }
+    }
+    &_link {
+      font-weight: 700;
+      font-size: 18px;
+
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  .active {
+    border-bottom: none;
+  }
+  .nav_item_line {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-top: 0.5px solid #9b9b9b;
+    border-bottom: 0.5px solid #9b9b9b;
+    width: 100%;
+    max-width: 870px;
+  }
+  .mobile_nav_icons {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile_nav_icons_img {
+    & + & {
+      margin-left: 25px;
+    }
+  }
+  .toggle_open_btn {
+    display: flex;
+  }
+
+  .header-open .nav {
+    display: flex;
+  }
+  .header-open .toggle_open_btn {
+    position: absolute;
+    top: calc(10% + 5px);
+    right: calc(5% - 20px);
+    z-index: 11;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../images/toggle_close.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    padding-top: 40px;
   }
 }

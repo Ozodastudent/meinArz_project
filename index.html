@@ -28,16 +28,30 @@
           <a href="#" class="logo">
             <img class="logo_img" src="./images/logo.png" alt="mein arzt logo" />
           </a>
-          <ul class="nav">
-            <li class="nav_item">
-              <a href="index.html" class="nav_link active">Home</a>
-            </li>
-            <li class="nav_item">
+          <nav class="nav_box">
+            <button class="toggle_open_btn">
+            </button>
+            <ul class="nav">
+              <li class="nav_item">
+                <a href="index.html" class="nav_link active">Home</a>
+              </li>
+            <li class="nav_item nav_item_line">
               <a href="./services.html" class="nav_link">Services</a>
             </li>
             <li class="nav_item"><a href="#" class="nav_link">About Us</a></li>
+            
+            <div class="mobile_nav_icons">
+              <img class="mobile_nav_icons_img" src="./images/mobile_icon1.png" alt="icon">
+              <img class="mobile_nav_icons_img" src="./images/mobile_icon2.png" alt="icon">
+              <img class="mobile_nav_icons_img" src="./images/mobile_icon3.png" alt="icon">
+              <img class="mobile_nav_icons_img" src="./images/mobile_icon4.png" alt="icon">
+            </div>
           </ul>
-          <a href="./signin.html" class="login_btn">Sign Up</a>
+        </nav>
+        
+          <div class="nav_register_button">
+            <a href="./signin.html" class="login_btn">Sign Up</a>
+          </div>
         </div>
       </div>
     </header>
@@ -125,6 +139,12 @@
               /></div>
             </div>
           </div>
+          <div class="hero_start">
+            <a href="./signin.html" class="hero_start_button">Get Started</a>
+            <a href="./signin.html" class="hero_start_button_direction">
+              <img src="./images/mobile_start_direction.png" alt="direction">
+            </a>
+          </div>
         </div>
       </section>
       <!-- consulting part -->
@@ -203,7 +223,7 @@
         </div>
       </section>
       <!-- our Services part -->
-      <section class="services d-none">
+      <section class="services">
         <img
           class="services_plus"
           src="./images/services_plus.png"
@@ -216,6 +236,7 @@
             <div class="services_titles">
               <div class="services_titles_items">
                 <h4 class="services_titles_item_one">Our Services</h4>
+                <img class="services_mobile_plus_title" src="./images/mobile_service_plus1.png" alt="plus image here">
                 <h3 class="services_titles_item_two">
                   Medical services and all types of diagnostics.
                 </h3>
@@ -223,13 +244,13 @@
             </div>
             <div class="services_cards">
               <ul class="services_cards_list row">
-                <div class="col-4 services_cards_box">
+                <div class="col-12 col-md-4 services_cards_box">
                   <li
-                    class="services_cards_item cards_item1 d-flex flex-column align-items-center"
+                    class="services_cards_item cards_item1"
                   >
                     <img src="./images/service_icon1.png" alt="" />
                     <h5 class="cards_item_title">Cardiology</h5>
-                    <p class="cards_item_desc">
+                    <p class="cards_item_desc cards_item1_desc">
                       You will discuss your medical history and symptoms, then
                       your doctor will perform a thorough evaluation.
                     </p>
@@ -239,14 +260,16 @@
                       >Consult</a
                     >
                   </li>
+                  <img class="services_mobile_plus" src="./images/mobile_service_plus3.png" alt="plus image here">
                 </div>
-                <div class="col-4 services_cards_box">
+                <div class="col-12 col-md-4 services_cards_box">
+                  <img class="services_mobile_plus" src="./images/mobile_service_plus1.png" alt="plus image here">
                   <li
-                    class="services_cards_item cards_item2 d-flex flex-column align-items-center"
+                    class="services_cards_item cards_item2"
                   >
                     <img src="./images/service_icon2.png" alt="" />
                     <h5 class="cards_item_title">Oral Healt</h5>
-                    <p class="cards_item_desc">
+                    <p class="cards_item_desc cards_item2_desc">
                       We provide general oral health care at community clinics,
                       as well as a range of secondary and specialist care
                       service.
@@ -257,15 +280,16 @@
                       >Consult</a
                     >
                   </li>
+                  
                 </div>
 
-                <div class="col-4 services_cards_box">
+                <div class="col-12 col-md-4  services_cards_box">
                   <li
-                    class="services_cards_item cards_item3 d-flex flex-column align-items-center"
+                    class="services_cards_item cards_item3"
                   >
                     <img src="./images/service_icon3.png" alt="" />
                     <h5 class="cards_item_title">Plastic Surgery</h5>
-                    <p class="cards_item_desc">
+                    <p class="cards_item_desc cards_item3_desc">
                       We provide general oral health care at community clinics,
                       as well as a range of secondary and specialist care
                       service.
@@ -276,14 +300,16 @@
                       >Consult</a
                     >
                   </li>
+                  <img class="services_mobile_plus1" src="./images/mobile_service_plus3.png" alt="plus image here">
                 </div>
-                <div class="col-4 services_cards_box">
+                <div class="col-12 col-md-4 services_cards_box">
+                  <img class="services_mobile_plus" src="./images/mobile_service_plus1.png" alt="plus image here">
                   <li
-                    class="services_cards_item cards_item4 d-flex flex-column align-items-center"
+                    class="services_cards_item cards_item4"
                   >
                     <img src="./images/service_icon4.png" alt="" />
                     <h5 class="cards_item_title">Ophthalmology</h5>
-                    <p class="cards_item_desc">
+                    <p class="cards_item_desc cards_item4_desc">
                       Our Doctors carry out eye tests, diagnose and treat all
                       eye diseases and perform eye surgeryif needed.
                     </p>
@@ -293,14 +319,15 @@
                       >Consult</a
                     >
                   </li>
+                  
                 </div>
-                <div class="col-4 services_cards_box">
+                <div class="col-12 col-md-4  services_cards_box">
                   <li
-                    class="services_cards_item cards_item5 d-flex flex-column align-items-center"
+                    class="services_cards_item cards_item5"
                   >
                     <img src="./images/service_icon5.png" alt="" />
                     <h5 class="cards_item_title">Urology</h5>
-                    <p class="cards_item_desc">
+                    <p class="cards_item_desc cards_item5_desc">
                       Our urologist consults patients with diseases of the male
                       genitourinary system and female urinary tract
                     </p>
@@ -310,15 +337,17 @@
                       >Consult</a
                     >
                   </li>
+                  <img class="services_mobile_plus" src="./images/mobile_service_plus3.png" alt="plus image here">
                 </div>
 
-                <div class="col-4 services_cards_box">
+                <div class="col-12 col-md-4 services_cards_box">
+                  <img class="services_mobile_plus" src="./images/mobile_service_plus1.png" alt="plus image here">
                   <li
-                    class="services_cards_item cards_item6 d-flex flex-column align-items-center"
+                    class="services_cards_item cards_item6"
                   >
                     <img src="./images/service_icon6.png" alt="" />
                     <h5 class="cards_item_title">Ginecology</h5>
-                    <p class="cards_item_desc">
+                    <p class="cards_item_desc cards_item6_desc">
                       Our urologist consults patients with diseases of the male
                       genitourinary system and female urinary tract
                     </p>
@@ -347,6 +376,7 @@
           alt="plus image"
         />
         <img class="about_card_two_plus" src="./images/about_plus.png" alt="plus image">
+       
           <div class="containers">
             <div class="about_inner">
               <h4 class="about_title">About Us</h4>
@@ -364,15 +394,16 @@
                   <a href="#" class="about_card_one_link">Make an E-Visit</a>
                 </div>
                 <div class="about_card_one_right">
-                  <img src="./images/about_doctors.png" alt="doctors imgae" />
+                  <img class="about_card_curvedline" src="./images/yellow_curve.png" alt="curved line">
+                  <img class="about_card_one_right_img" src="./images/about_doctors.png" alt="doctors imgae" />
                 </div>
               </div>
               <div class="about_card_two">
-                  <div class="about_card_two_left">
+                  <div class="about_card_two_left about_mobile_none">
                     <img class="about_card_two_left_image" src="./images/about_phne1.png" alt="phone image">
                   </div>
                   <div class="about_card_two_right">
-                    <div class="about_card_two_right_box"></div>
+                    <div class="about_card_two_right_box about_mobile_none"></div>
                     <div class="about_card_two_right_text">
 
                       <h5 class="about_card_two_right_title">E-Consultation - Maximum Benefits, Zero Stress</h5>
@@ -384,22 +415,27 @@
                         <br>
                         —  A nurse on call</p>
                       </div>
-                      <img class="about_card_two_right_line" src="./images/direction_line.png" alt="">
+                      <img class="about_card_two_right_line about_mobile_none" src="./images/direction_line.png" alt="line image">
+                      <img class="about_card_two_right_mobile_line1 about_mobile_flex" src="./images/mobile_line1.png" alt="line image">
                     </div>
+                  </div>
+                  <div class="mobile_line2_card">
+                    <img class="mobile_line2 about_mobile_flex" src="./images/mobile_lin2.png" alt="">
                   </div>
               <div class="about_card_three">
                 <div class="about_card_three_left">
-                  <div class="about_card_three_left_box">
-                    <img src="./images/about_logo.png" alt="logo image">
+                  <div class="about_card_three_left_box about_mobile_none">
+                    <img class="about_card_three_left_logo" src="./images/about_logo.png" alt="logo image">
                   </div>
                   <div class="about_card_three_left_text">
                     <h5 class="about_card_three_left_title">What Makes Us Stand Out</h5>
                     <p class="about_card_three_left_desc">Mein Arzt is an online clinic where you have access to the staff of the best specialists, without leaving your home and exposing yourself to the risk of contracting coronavirus. During the E-Visit, you can consult the test result, order an     E-prescription or request E-referrals.</p>
                   </div>
-                  <img class="about_card_three_left_line" src="./images/direction_line2.png" alt="direction line">
+                  <img class="about_card_three_left_line about_mobile_none" src="./images/direction_line2.png" alt="direction line">
+                  <img class="about_card_three_left_mobile_line2 about_mobile_flex" src="./images/mobile_lin3.png" alt="direction line">
                 </div>
-                <div class="about_card_three_right">
-                  <img src="./images/about_phone2.png" alt="phone image">
+                <div class="about_card_three_right about_mobile_none">
+                  <img class="about_card_three_right_img" src="./images/about_phone2.png" alt="phone image">
                 </div>
               </div>
             </div>
@@ -418,7 +454,7 @@
               <ul class="opinion_cards_list list-unstyled position-relative">
                 <li class="opinion_card d-flex justify-content-between">
                   <div class="opinion_card_left">
-                    <img src="./images/opinion_people.png" alt="people images">
+                    <img class="opinion_card_left_img" src="./images/opinion_people.png" alt="people images">
                   </div>
                   <div class="opinion_card_right d-flex flex-column">
                     <img width="69" height="53" src="./images/opinion_quotes.png" alt="quotation mark">
@@ -432,7 +468,7 @@
                 </li>
                 <li class="opinion_card d-flex justify-content-between">
                   <div class="opinion_card_left">
-                    <img src="./images/opinion_people.png" alt="people images">
+                    <img class="opinion_card_left_img" src="./images/opinion_people.png" alt="people images">
                   </div>
                   <div class="opinion_card_right d-flex flex-column">
                     <img width="69" height="53" src="./images/opinion_quotes.png" alt="quotation mark">
@@ -446,7 +482,7 @@
                 </li>
                 <li class="opinion_card d-flex justify-content-between">
                   <div class="opinion_card_left">
-                    <img src="./images/opinion_people.png" alt="people images">
+                    <img class="opinion_card_left_img" src="./images/opinion_people.png" alt="people images">
                   </div>
                   <div class="opinion_card_right d-flex flex-column">
                     <img width="69" height="53" src="./images/opinion_quotes.png" alt="quotation mark">
@@ -520,7 +556,7 @@
         <p class="footer_copyright">Copyright © 2022 - 2023    Mein Arzt All rights reserved</p>
         <div class="footer_director">
           <a class="footer_director_btn" href="#headerpart">
-            <img src="./images/Top_to_Button.png" alt="Top to Button">
+            <img class="footer_director_img" src="./images/Top_to_Button.png" alt="Top to Button">
           </a>
         </div>
       </div>

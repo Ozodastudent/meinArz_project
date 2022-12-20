@@ -26,7 +26,6 @@
   &_desc {
     margin-top: -30px;
     font-family: "Blinker";
-    text-align: center;
     font-weight: 600;
     font-size: 26px;
     line-height: 179.5%;
@@ -35,7 +34,7 @@
     &_box {
       background-image: url("../../images/text_bgimg.png");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 430px;
     }
   }
   &_img_tablet {
@@ -120,7 +119,9 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.hero_start {
+  display: none;
+}
 // responsive part
 @media only screen and (max-width: 1300px) {
   .hero_first_part {
@@ -235,5 +236,202 @@
 @media only screen and (max-width: 850px) {
   .hero_third_part {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero_parts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero_first_part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    &_title {
+      font-size: 32px;
+    }
+    &_desc {
+      font-size: 18px;
+      margin-top: 1px;
+      text-align: center;
+      &_box {
+        background-image: url("../../images/text_bgimg.png");
+        background-repeat: no-repeat;
+        background-position-x: calc(10% + 30px);
+        background-size: 320px;
+      }
+    }
+    &_img_tablet {
+      display: flex;
+    }
+  }
+  .hero_first_part_shape {
+    margin-top: 34px;
+    width: 40px;
+    height: 55px;
+  }
+
+  .hero_second_part {
+    margin-top: 50px;
+  }
+  .hero_curved_line {
+    position: absolute;
+    top: calc(50% - 194px);
+    right: calc(50% - 295px);
+  }
+  .hero_circle {
+    display: block;
+    position: absolute;
+    top: calc(10% + 15px);
+    width: 430px;
+    height: 430px;
+    left: calc(5% - 35px);
+    z-index: -1;
+  }
+  .hero_start {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero_start_button {
+    margin-bottom: 28px;
+    padding: 10px 26px;
+    font-family: "Blinker";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 157%;
+    color: #ffffff;
+    text-decoration: none;
+    background: #4e677d;
+    border-radius: 10px 10px 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .hero_parts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .hero_first_part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    &_title {
+      font-size: 32px;
+    }
+    &_desc {
+      font-size: 18px;
+      margin-top: 1px;
+      text-align: start;
+      &_box {
+        background-image: url("../../images/text_bgimg.png");
+        background-repeat: no-repeat;
+        background-position-x: calc(50% - 40px);
+        background-size: 320px;
+      }
+    }
+    &_img_tablet {
+      display: flex;
+    }
+  }
+  .hero_first_part_shape {
+    margin-top: 34px;
+    width: 28px;
+    height: 35px;
+  }
+  .hero_second_part {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .hero_curved_line {
+    position: absolute;
+    top: calc(50% - 214px);
+    right: calc(50% - 255px);
+  }
+  .hero_second_part {
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero_second_part {
+    margin-left: 0px;
+  }
+  .hero_curved_line {
+    width: 92px;
+    height: 53px;
+    position: absolute;
+    top: calc(50% - 144px);
+    right: calc(50% - 215px);
+  }
+  .curved_line_img {
+    width: 102px;
+    height: 93px;
+  }
+  .hero_circle {
+    display: block;
+    position: absolute;
+    top: calc(10% + 15px);
+    width: 315px;
+    height: 315px;
+    left: calc(50% - 115px);
+    z-index: -1;
+  }
+}
+@media only screen and (max-width: 391px) {
+  .hero_second_girl_img {
+    width: 263.19px;
+    height: 288.97px;
+  }
+  .hero_curved_line {
+    position: absolute;
+    top: calc(50% - 134px);
+    right: calc(50% - 215px);
+  }
+  .curved_line_img {
+    width: 82px;
+    height: 77px;
+  }
+  .hero_circle {
+    top: calc(10% + 15px);
+    width: 295px;
+    height: 315px;
+    left: calc(50% - 115px);
+    z-index: -1;
+  }
+  .hero_first_part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    &_title {
+      font-size: 28px;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    &_desc {
+      font-size: 14px;
+      margin-top: 1px;
+      text-align: start;
+      &_box {
+        background-image: url("../../images/text_bgimg.png");
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-size: 240px;
+      }
+    }
+    &_img_tablet {
+      display: flex;
+    }
+  }
+  .hero_first_part_img_tablet {
+    width: 244px;
   }
 }

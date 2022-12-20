@@ -69,7 +69,6 @@
 // responsive part
 @media only screen and (max-width: 1300px) {
   .consulting {
-    background-color: rgb(172, 147, 147);
     padding-top: 46px;
     background-image: url("../../images/consult1.png");
     background-position-y: calc(10% + 60px);
@@ -82,12 +81,10 @@
   .consulting_desc {
     width: 100%;
     max-width: 470px;
-    background-color: pink;
   }
 }
 @media only screen and (max-width: 1200px) {
   .consulting {
-    background-color: red;
     padding-top: 46px;
     background-image: url("../../images/consult1.png");
     background-size: 109px;
@@ -116,5 +113,106 @@
   }
   .consulting_desc_text {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .consulting {
+    padding-top: 106px;
+    background-image: url("../../images/consult1.png");
+    background-size: 80px;
+  }
+  .consulting_photo {
+    margin-top: 30px;
+  }
+  .consulting_photo_img {
+    width: 290px;
+    height: 230px;
+  }
+  .consulting_desc {
+    width: 100%;
+    max-width: 350px;
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .consulting {
+    padding-top: 60px;
+    background-size: 100px;
+  }
+  .consulting_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .consulting_photo {
+    margin-top: 0px;
+  }
+  .consulting_photo_title {
+    width: 100%;
+    max-width: 400px;
+  }
+  .consulting_photo_img {
+    width: 100%;
+    max-width: 400px;
+    height: 330px;
+  }
+  .consulting_photo_link {
+    display: none;
+  }
+  .consulting_desc {
+    margin-top: 70px;
+    width: 100%;
+    max-width: 550px;
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 510px) {
+  .consulting {
+    padding-top: 66px;
+    background-image: none;
+  }
+  .consulting_photo_title {
+    width: 100%;
+    max-width: 200px;
+    font-size: 22px;
+  }
+
+  .consulting_photo_img {
+    width: 100%;
+    max-width: 350px;
+    height: 290px;
+  }
+  .consulting_desc {
+    margin-top: 70px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .consulting_desc_number {
+    font-size: 20px;
+  }
+  .consulting_desc_title {
+    font-size: 16px;
+  }
+  .consulting_desc_text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .consulting_photo_img {
+    width: 100%;
+    max-width: 290px;
+    height: 240px;
+  }
+  .consulting_desc {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 300px;
   }
 }

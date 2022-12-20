@@ -38,6 +38,9 @@
   top: 4%;
   left: 10%;
 }
+.about_mobile_flex {
+  display: none;
+}
 .about_card_one_title {
   padding-left: 130px;
   font-family: "Newsreader";
@@ -72,6 +75,9 @@
     color: #4e677dd5;
   }
 }
+.about_card_curvedline {
+  display: none;
+}
 
 .about_card_two {
   margin-top: 140px;
@@ -89,7 +95,6 @@
   height: 530px;
 }
 .about_card_two_right {
-  //   padding-top: 100px;
   position: relative;
 }
 .about_card_two_right_box {
@@ -150,6 +155,11 @@
   height: 324px;
   background-color: #f6e8cc59;
 }
+.about_card_three_left_logo {
+  position: absolute;
+  top: calc(10% - 1px);
+  left: calc(10% - 1px);
+}
 .about_card_three_left_text {
   width: 100%;
   max-width: 541px;
@@ -178,4 +188,385 @@
   top: calc(20% + 43px);
   right: calc(10% - 130px);
   height: 310px;
+}
+
+// responsive part
+
+@media only screen and (max-width: 1330px) {
+  .about_card_one_right_img {
+    width: 550px;
+    height: 470px;
+  }
+  .about_card_one_left {
+    padding-top: 70px;
+    width: 100%;
+    max-width: 484px;
+    text-align: end;
+  }
+  .about_card_two_left_image {
+    width: 500px;
+    height: 480px;
+  }
+  .about_card_two_right_box {
+    width: 352px;
+    height: 207px;
+  }
+  .about_card_two_right_title {
+    font-size: 30px;
+  }
+  .about_card_two_right_desc {
+    font-size: 20px;
+  }
+  .about_card_two_right_line {
+    top: calc(5% + 0px);
+    right: calc(10% + 20px);
+    width: 420px;
+    height: 280px;
+  }
+
+  .about_card_three_left_box {
+    width: 352px;
+    height: 207px;
+    top: calc(10% + 5px);
+    left: calc(5% - 100px);
+  }
+  .about_card_three_left_text {
+    width: 100%;
+    max-width: 450px;
+  }
+  .about_card_three_left_title {
+    font-size: 32px;
+  }
+  .about_card_three_left_desc {
+    font-size: 20px;
+  }
+  .about_card_three_left_line {
+    top: calc(20% + 60px);
+    right: calc(50% - 309px);
+    width: 350px;
+    height: 320px;
+  }
+  .about_card_three_right_img {
+    width: 530px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .about_card_one_right_img {
+    width: 480px;
+    height: 410px;
+  }
+  .about_card_one_left {
+    padding-top: 70px;
+    width: 100%;
+    max-width: 444px;
+  }
+
+  .about_card_one_line {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+  }
+  .about_card_one_title {
+    padding-left: 100px;
+    font-size: 23px;
+  }
+  .about_card_one_desc {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  .about_card_one_link {
+    font-size: 20px;
+  }
+
+  .about_card_two_left_image {
+    width: 430px;
+    height: 420px;
+  }
+  .about_card_two_right_box {
+    width: 302px;
+    height: 157px;
+    top: calc(50% - 130px);
+    right: calc(10% - 110px);
+  }
+  .about_card_two_right_text {
+    width: 100%;
+    max-width: 350px;
+  }
+  .about_card_two_right_title {
+    font-size: 26px;
+  }
+  .about_card_two_right_desc {
+    font-size: 18px;
+  }
+  .about_card_two_right_line {
+    top: calc(5% + 7px);
+    right: calc(50% - 107px);
+    width: 370px;
+    height: 240px;
+  }
+
+  .about_card_three_left_box {
+    width: 352px;
+    height: 207px;
+    top: calc(10% + 5px);
+    left: calc(5% - 100px);
+  }
+  .about_card_three_left_text {
+    width: 100%;
+    max-width: 400px;
+  }
+  .about_card_three_left_title {
+    font-size: 25px;
+  }
+  .about_card_three_left_desc {
+    font-size: 18px;
+  }
+  .about_card_three_left_line {
+    top: calc(20% + 60px);
+    right: calc(50% - 275px);
+    width: 380px;
+    height: 280px;
+  }
+  .about_card_three_right_img {
+    width: 470px;
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 1101px) {
+  .about_card_one_left {
+    padding-top: 80px;
+    width: 100%;
+    max-width: 380px;
+  }
+  .about_card_one_line {
+    position: absolute;
+    top: calc(5% - 10px);
+    left: calc(10% - 30px);
+  }
+  .about_card_one_title {
+    padding-left: 40px;
+    font-size: 23px;
+  }
+  .about_card_one_desc {
+    text-align: end;
+  }
+  .about_card_one_right_img {
+    width: 350px;
+    height: 300px;
+  }
+  .about_card_two_left_image {
+    width: 360px;
+    height: 310px;
+  }
+  .about_card_two_right_box {
+    width: 223px;
+    height: 136px;
+    top: calc(10% - 100px);
+    right: calc(10% - 70px);
+    z-index: -1;
+    width: 372px;
+    height: 227px;
+    background-color: #f6e8cc;
+    opacity: 0.35;
+  }
+
+  .about_card_two_right_text {
+    width: 100%;
+    max-width: 290px;
+  }
+  .about_card_two_right_title {
+    font-size: 22px;
+  }
+  .about_card_two_right_desc {
+    font-size: 16px;
+  }
+  .about_card_two_right_line {
+    top: calc(5% + 2px);
+    right: calc(50% - 77px);
+    width: 290px;
+    height: 212px;
+  }
+  .about_card_three_left_box {
+    width: 295px;
+    height: 194px;
+    top: calc(10% + 5px);
+    left: calc(5% - 70px);
+  }
+  .about_card_three_left_text {
+    width: 100%;
+    max-width: 324px;
+  }
+  .about_card_three_left_title {
+    font-size: 22px;
+  }
+  .about_card_three_left_desc {
+    font-size: 16px;
+  }
+  .about_card_three_left_line {
+    top: calc(20% + 70px);
+    right: calc(50% - 250px);
+    width: 340px;
+    height: 285px;
+  }
+  .about_card_three_right {
+    background-color: yellow;
+  }
+  .about_card_three_right_img {
+    margin-top: 60px;
+    width: 320px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .about_card_two_plus {
+    display: none;
+  }
+  .about_card_one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_card_one_right {
+    position: relative;
+  }
+  .about_card_curvedline {
+    position: absolute;
+    top: calc(5% + 30px);
+    right: 0;
+    display: block;
+  }
+  .about_card_one_left {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_card_two_right_box {
+    top: calc(10% - 100px);
+    right: calc(5% - 30px);
+  }
+  .about_card_one_line {
+    position: absolute;
+    top: calc(5% - 40px);
+    left: calc(5% - 50px);
+  }
+  .about_card_one_title {
+    padding-left: 0px;
+    font-size: 23px;
+    text-align: center;
+  }
+  .about_card_one_desc {
+    text-align: center;
+  }
+  .about_plus {
+    display: none;
+  }
+  .about_card_one_right_img {
+    width: 550px;
+    height: 470px;
+  }
+  .about_mobile_none {
+    display: none;
+  }
+  .about_card_two {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_card_two_right_text {
+    width: 100%;
+    max-width: 406px;
+  }
+  .about_card_two_right_mobile_line1 {
+    position: absolute;
+    top: calc(10% - 10px);
+    left: calc(5% - 70px);
+  }
+  .mobile_line2_card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .about_card_three_left_mobile_line2 {
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: calc(10% - 6px);
+    right: 0;
+  }
+  .about_card_three {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_card_three_left {
+    position: relative;
+    padding-top: 0px;
+  }
+  .about_mobile_flex {
+    display: flex;
+  }
+  .about_card_three_left_text {
+    width: 100%;
+    max-width: 406px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about_title {
+    font-size: 16px;
+  }
+  .about_card_one_left {
+    width: 100%;
+    max-width: 330px;
+  }
+  .about_card_one_title {
+    font-size: 22px;
+  }
+  .about_card_one_desc {
+    font-size: 16px;
+  }
+  .about_card_curvedline {
+    top: calc(5% + 30px);
+    right: 0;
+    width: 70px;
+    height: 80px;
+  }
+  .about_card_one_right_img {
+    width: 369px;
+    height: 317px;
+  }
+  .about_card_two_right_text {
+    width: 100%;
+    max-width: 295px;
+  }
+  .about_card_two_right_mobile_line1 {
+    height: 180px;
+    top: calc(10% - 10px);
+    left: calc(5% - 80px);
+  }
+  .about_card_three_left_text {
+    width: 100%;
+    max-width: 329px;
+  }
+  .about_card_three_left_mobile_line2 {
+    width: 300px;
+    height: 227px;
+    position: absolute;
+    top: calc(10% - 10px);
+    right: calc(5% - 80px);
+  }
+}
+
+@media only screen and (max-width: 461px) {
 }

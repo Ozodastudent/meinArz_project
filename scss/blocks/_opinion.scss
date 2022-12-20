@@ -96,3 +96,35 @@
 .slick-next {
   display: none !important;
 }
+
+@media only screen and (max-width: 1300px) {
+  .opinion_title_two {
+    font-size: 30px;
+  }
+  .opinion_card_left_img {
+    width: 480px;
+  }
+  .opinion_part_plus2 {
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .opinion_title_one {
+    font-size: 18px;
+  }
+
+  .opinion_title_two {
+    font-size: 24px;
+  }
+  .opinion_card_left_img {
+    width: 480px;
+  }
+  .opinion_part_plus2 {
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+  }
+}
