@@ -198,6 +198,9 @@
     color: #4e677dda;
   }
 }
+.services_mobile_plus {
+  display: none;
+}
 
 // responsive part
 @media only screen and (max-width: 1250px) {
@@ -372,6 +375,9 @@
     position: absolute;
     top: calc(50% + 40px);
     left: calc(5% - 50px);
+  }
+  .services_mobile_plus {
+    display: block;
   }
 }
 @media only screen and (max-width: 410px) {

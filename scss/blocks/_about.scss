@@ -577,40 +577,63 @@
     top: 0;
     right: 0;
     position: absolute;
-    background-color: lightcyan;
   }
   .about_card_three {
     position: relative;
   }
   .about_card_three_left {
-    background-color: lightcoral;
-    top: calc(100% + 190px);
+    top: calc(100% + 280px);
     left: 0;
     position: absolute;
   }
   .about_card_three_left_mobile_line2 {
-    width: 250px;
-    height: 227px;
+    width: 303px;
+    height: 257px;
     top: calc(10% - 10px);
-    right: calc(5% - 60px);
+    right: calc(5% - 20px);
+  }
+  .about_card_three_left_title {
+    margin-right: 120px;
+  }
+  .mobile_line2_card {
+    position: absolute;
+    top: calc(100% + 80px);
+    left: 50%;
+  }
+  .about_card_curvedline {
+    top: calc(5% + 30px);
+    right: calc(5% - 10px);
+    width: 70px;
+    height: 80px;
+  }
+  .about_card_one_line {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: calc(5% - 40px);
+    left: calc(10% - 68px);
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 361px) {
   .about_card_one_right_img {
     width: 349px;
     height: 307px;
-    background-color: red;
+  }
+  .about_card_three_left_title {
+    margin-right: 120px;
+  }
+  .about_card_two_right_mobile_line1 {
+    display: none;
   }
   .about_card_three_left_mobile_line2 {
-    top: calc(10% - 10px);
-    right: calc(5% - 55px);
+    display: none;
+  }
+  .about_card_one_line {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(5% - 20px);
+    left: calc(10% - 48px);
   }
 }
-// @media only screen and (max-width: 380px) {
-//   .about_card_three_left_mobile_line2 {
-//     width: 220px;
-//     top: calc(10% - 10px);
-//     right: calc(5% - 40px);
-//   }
-// }

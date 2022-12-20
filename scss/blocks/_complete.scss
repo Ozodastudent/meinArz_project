@@ -1,0 +1,46 @@
+.complete {
+  padding-top: 140px;
+  padding-bottom: 327px;
+  background-color: #f5f7fb;
+}
+.complete_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.complete_card {
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.complete_card_title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 145%;
+  color: #4e677d;
+}
+.complete_card_desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #7e7e7e;
+}
+.complete_card_desc_bold {
+  font-weight: 600;
+  color: #4e677d;
+}
+.complete_card_link {
+  padding: 13px 188px;
+  background: #4e677d;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 145%;
+  color: #ffffff;
+}

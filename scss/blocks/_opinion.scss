@@ -10,7 +10,7 @@
 }
 .opinion_part_plus2 {
   position: absolute;
-  top: calc(50% - 70px);
+  top: calc(50% + 50px);
   right: 0;
 }
 // .opinion_part_inner {
@@ -40,6 +40,7 @@
   }
 }
 .opinion_cards_list {
+  width: 50%;
   margin-top: 48px;
   display: flex;
 }
@@ -125,6 +126,11 @@
   .opinion_part_plus2 {
     position: absolute;
     top: calc(50% - 1px);
+    right: 0;
+  }
+  .opinion_part_plus2 {
+    position: absolute;
+    top: calc(50% + 60px);
     right: 0;
   }
 }
