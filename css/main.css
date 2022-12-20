@@ -2236,9 +2236,6 @@ body {
   }
 }
 @media only screen and (max-width: 460px) {
-  .services {
-    background-color: lightgreen;
-  }
   .services_cards_item {
     width: 100%;
     max-width: 270px;
@@ -2268,14 +2265,14 @@ body {
   .services_mobile_plus_title {
     position: absolute;
     top: calc(50% + 40px);
-    left: calc(5% - 20px);
+    left: calc(5% - 50px);
   }
 }
 @media only screen and (max-width: 410px) {
   .cards_item2,
 .cards_item4,
 .cards_item6 {
-    margin-left: 50px;
+    margin-left: 40px;
   }
 }
 .about {
@@ -2912,6 +2909,44 @@ body {
     position: absolute;
     top: calc(10% - 10px);
     right: calc(5% - 80px);
+  }
+}
+@media only screen and (max-width: 461px) {
+  .about_card_two {
+    position: relative;
+    background-color: lightblue;
+  }
+  .about_card_two_right {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: lightcyan;
+  }
+  .about_card_three {
+    position: relative;
+  }
+  .about_card_three_left {
+    background-color: lightcoral;
+    top: calc(100% + 190px);
+    left: 0;
+    position: absolute;
+  }
+  .about_card_three_left_mobile_line2 {
+    width: 250px;
+    height: 227px;
+    top: calc(10% - 10px);
+    right: calc(5% - 60px);
+  }
+}
+@media only screen and (max-width: 380px) {
+  .about_card_one_right_img {
+    width: 349px;
+    height: 307px;
+    background-color: red;
+  }
+  .about_card_three_left_mobile_line2 {
+    top: calc(10% - 10px);
+    right: calc(5% - 55px);
   }
 }
 .opinion_part {

@@ -348,9 +348,6 @@
 }
 
 @media only screen and (max-width: 460px) {
-  .services {
-    background-color: lightgreen;
-  }
   .services_cards_item {
     width: 100%;
     max-width: 270px;
@@ -374,13 +371,13 @@
   .services_mobile_plus_title {
     position: absolute;
     top: calc(50% + 40px);
-    left: calc(5% - 20px);
+    left: calc(5% - 50px);
   }
 }
 @media only screen and (max-width: 410px) {
   .cards_item2,
   .cards_item4,
   .cards_item6 {
-    margin-left: 50px;
+    margin-left: 40px;
   }
 }
