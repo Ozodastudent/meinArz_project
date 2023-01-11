@@ -1,27 +1,19 @@
 .register_part {
   padding-top: 132px;
   padding-left: 80px;
-  width: 100%;
-  max-width: 1728px;
   position: relative;
-  background-image: url("../../images/reg_bgimg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: calc(50% - 175px);
 }
-.register_img {
-  margin: 0 auto;
+.register_image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1728px;
-  min-height: 1000px;
+  min-height: 1117px;
+  z-index: -1;
 }
 .register_inner {
   width: 100%;
   max-width: 390px;
-  // position: absolute;
-  // top: calc(50% - 400px);
-  // left: calc(50% - 480px);
-  // z-index: 1;
   &_title {
     margin-bottom: 55px;
     font-family: "Poppins";

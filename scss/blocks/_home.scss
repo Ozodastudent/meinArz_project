@@ -3,7 +3,7 @@
   padding-top: 35px;
   padding-right: 27px;
   padding-bottom: 30px;
-  background-color: rgb(211, 182, 182);
+  background-color: #fff;
 }
 .home_nav_list {
   margin-left: -10px;
@@ -48,7 +48,308 @@
 // home hero
 
 .home_hero {
+  padding-top: 40px;
+  padding-bottom: 46px;
   width: 80vw;
-  background-color: red;
-  //   background-color: #f5f7fb;
+  background-color: #f5f7fb;
+  // background-color: lightsalmon;
+}
+
+.home_hero_header {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #4e677d;
+}
+.home_hero_header_one {
+  position: relative;
+}
+.home_hero_search_icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: calc(5% + 7px);
+  left: 0;
+  z-index: 1;
+}
+.home_hero_input {
+  padding: 10px 13px 10px 30px;
+  width: 340px;
+  border: none;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+  border-bottom: 0.5px solid #9b9b9b;
+  filter: drop-shadow(0px 2px 8px #e9f0ff);
+}
+.hero_header_second {
+  display: flex;
+  align-items: center;
+}
+
+.home_person_info {
+  margin-left: 36px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  border-left: 0.5px solid #9b9b9b;
+}
+.home_person_select {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.333333px;
+  color: #333333;
+  border: none;
+  background-color: transparent;
+}
+// home main part
+.home_hero_main {
+  padding: 40px 20px 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.home_main_left_titles {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_main_left_titles_item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.333333px;
+  color: #4e677d;
+}
+.home_main_left_titles_item_one {
+  margin-top: 13px;
+}
+.home_main_left_titles_item_two:hover {
+  color: #3c5063;
+}
+.home_main_left_card {
+  padding: 15px;
+  // padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px #e9f0ff;
+  border-radius: 15px;
+}
+.home_main_left_card_child {
+  padding: 15px;
+  background: #f5f7fb;
+  box-shadow: 0px 0px 3px #e9f0ff;
+  border-radius: 10px;
+}
+.home_card_person {
+  display: flex;
+  align-items: center;
+}
+.home_card_person_info {
+  padding-top: 10px;
+  margin-left: 17px;
+}
+.home_card_person_info_one {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.333333px;
+  color: #333333;
+}
+.home_card_person_info_two {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2px;
+  letter-spacing: -0.333333px;
+  color: rgba(51, 51, 51, 0.6);
+}
+.home_main_left_card_time {
+  margin-top: 15px;
+  padding: 0px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.home_card_time_item {
+  display: flex;
+  align-items: center;
+}
+.home_card_time_title {
+  margin-top: 13px;
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.333333px;
+  color: #333333;
+}
+.home_card_time_title_red {
+  color: #fd7265;
+}
+.home_card_links {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home_link_one_item {
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.333333px;
+  color: #4e677d;
+  border: 0.5px solid #4e677d;
+  border-radius: 10px;
+  &:hover {
+    color: #4e677d;
+  }
+}
+.home_link_one_item_two {
+  padding: 10px 30px;
+  color: #ffffff;
+  background: #4e677d;
+  &:hover {
+    color: #fff;
+  }
+}
+.home_main_right_card {
+  display: flex;
+  // padding: 15px 10px 15px 10px;
+  padding: 25px 21px 25px 22px;
+}
+.home_main_right_card_child {
+  width: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & + & {
+    margin-left: 23px;
+  }
+}
+.home_right_card_title {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.666667px;
+  color: #333333;
+}
+.home_right_card_link {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.333333px;
+  color: #4e677d;
+}
+// home bottom
+.home_bottom {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.home_bottom_doctors {
+  width: 100%;
+  max-width: 696px;
+}
+.home_bottom_titles_one {
+  margin-bottom: 15px;
+}
+.home_doctors_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 32px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px #e9f0ff;
+  border-radius: 15px;
+}
+.home_doctors_card_person {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 15px 15px;
+  background: #f5f7fb;
+  box-shadow: 0px 0px 3px #e9f0ff;
+  border-radius: 10px;
+  & + & {
+    margin-top: 25px;
+  }
+}
+.home_bottom_card_child {
+  padding: 19px 10px 25px 10px;
+  & + & {
+    margin-top: 16px;
+  }
+}
+.home_doctors_card_person_info {
+  margin-top: 15px;
+  margin-left: 17px;
+}
+.home_doctors_card_person_info_one {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2px;
+  letter-spacing: -0.333333px;
+  color: #333333;
+}
+.home_doctors_card_person_info_two {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2px;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+}
+.home_bottom_schedule {
+  padding: 17px 30px;
+}
+.home_bottom_schedule_time {
+  margin-top: 15px;
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home_bottom_schedule_link {
+  padding: 10px 100px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #4e677d;
+  border-radius: 10px;
 }
