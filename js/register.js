@@ -1,6 +1,7 @@
 const elRegisterForm = document.querySelector(".sign_main_left_form");
 const elRegisterFormName = document.querySelector(".user_name_input");
 const elRegisterFormEmail = document.querySelector(".user_email_input");
+const elRegisterFormPassword = document.querySelector(".user_password_input");
 
 async function registerUsers() {
   try {
@@ -20,7 +21,7 @@ async function registerUsers() {
     if (data.token) {
       console.log(data);
       localStorage.setItem("register-token", data.token);
-      window.location.pathname = "/index.html";
+      window.location.pathname = "/home.html";
     }
   } catch (error) {
     console.log(error);

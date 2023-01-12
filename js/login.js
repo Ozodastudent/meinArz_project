@@ -1,12 +1,45 @@
-const loginPassword = document.querySelector(".register_password");
+const elLoginForm = document.querySelector(".register_form");
+const elLoginEmail = document.querySelector(".regiter_email");
+const elLoginPassword = document.querySelector(".register_password");
+
 const closeBtn = document.querySelector(".close_eye");
 // Password part login
 closeBtn.addEventListener("mousedown", () => {
-  loginPassword.type = "text";
+  elLoginPassword.type = "text";
 });
 closeBtn.addEventListener("mouseup", () => {
-  loginPassword.type = "password";
+  elLoginPassword.type = "password";
 });
 closeBtn.addEventListener("mouseout", () => {
-  loginPassword.type = "password";
+  elLoginPassword.type = "password";
+});
+
+// login part
+
+async function loginUsers() {
+  try {
+    const login = {
+      email: elLoginEmail.value.trim(),
+      password: elLoginPassword.value.trim(),
+    };
+    const res = await fetch(`http://meinarzt-production.up.railway.app`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(login),
+    });
+    const data = await res.json();
+    if (data.token) {
+      localStorage.setItem("login-token", data.token);
+      window.location.pathname = "/home.html";
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+elLoginForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  loginUsers();
 });
