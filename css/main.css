@@ -3205,6 +3205,23 @@ body {
 
 .cardiolog_hero {
   padding-bottom: 169px;
+  position: relative;
+}
+
+.cardiolog_hero_plus_left {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 110.33px;
+  height: 114.32px;
+}
+
+.cardiolog_hero_plus_right {
+  position: absolute;
+  top: calc(5% - 140px);
+  right: 0;
+  width: 126.12px;
+  height: 127.84px;
 }
 
 .cardiolog_cards {
@@ -3281,6 +3298,34 @@ body {
   border-bottom: 1px solid #4e677d;
 }
 
+@media only screen and (min-width: 1400px) {
+  .cardiolog_container {
+    padding: 0 110px;
+  }
+  .cardiolog_cards_item {
+    width: 100%;
+    max-width: 590px;
+  }
+  .cardiolog_hero_plus_right {
+    position: absolute;
+    top: calc(5% - 110px);
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1610px) {
+  .cardiolog_container {
+    padding: 0 150px;
+  }
+  .cardiolog_cards_item {
+    width: 100%;
+    max-width: 635px;
+  }
+  .cardiolog_hero_plus_right {
+    position: absolute;
+    top: calc(5% - 90px);
+    right: 0;
+  }
+}
 footer {
   position: relative;
   background-color: #faf5ec;
@@ -3460,6 +3505,7 @@ footer {
   }
 }
 .home_nav {
+  position: fixed;
   width: 20vw;
   padding-top: 35px;
   padding-right: 27px;
@@ -3529,6 +3575,9 @@ footer {
 }
 
 .home_hero {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding-top: 40px;
   padding-bottom: 46px;
   width: 80vw;
@@ -3729,10 +3778,13 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.home_card_time_item + .home_card_time_item {
+  margin-left: 10px;
+}
 
 .home_card_time_title {
   margin-top: 13px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;

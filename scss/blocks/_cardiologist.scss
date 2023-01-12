@@ -7,6 +7,21 @@
 }
 .cardiolog_hero {
   padding-bottom: 169px;
+  position: relative;
+}
+.cardiolog_hero_plus_left {
+  position: absolute;
+  top: calc(30%);
+  left: 0;
+  width: 110.33px;
+  height: 114.32px;
+}
+.cardiolog_hero_plus_right {
+  position: absolute;
+  top: calc(5% - 140px);
+  right: 0;
+  width: 126.12px;
+  height: 127.84px;
 }
 .cardiolog_cards {
   list-style: none;
@@ -65,4 +80,32 @@
   letter-spacing: 1.16667px;
   color: #4e677d;
   border-bottom: 1px solid #4e677d;
+}
+@media only screen and (min-width: 1400px) {
+  .cardiolog_container {
+    padding: 0 110px;
+  }
+  .cardiolog_cards_item {
+    width: 100%;
+    max-width: 590px;
+  }
+  .cardiolog_hero_plus_right {
+    position: absolute;
+    top: calc(5% - 110px);
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1610px) {
+  .cardiolog_container {
+    padding: 0 150px;
+  }
+  .cardiolog_cards_item {
+    width: 100%;
+    max-width: 635px;
+  }
+  .cardiolog_hero_plus_right {
+    position: absolute;
+    top: calc(5% - 90px);
+    right: 0;
+  }
 }

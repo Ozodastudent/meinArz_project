@@ -1,4 +1,5 @@
 .home_nav {
+  position: fixed;
   width: 20vw;
   padding-top: 35px;
   padding-right: 27px;
@@ -48,6 +49,10 @@
 // home hero
 
 .home_hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+
   padding-top: 40px;
   padding-bottom: 46px;
   width: 80vw;
@@ -191,10 +196,13 @@
 .home_card_time_item {
   display: flex;
   align-items: center;
+  & + & {
+    margin-left: 10px;
+  }
 }
 .home_card_time_title {
   margin-top: 13px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
@@ -353,3 +361,25 @@
   background: #4e677d;
   border-radius: 10px;
 }
+
+// @media only screen and (min-width: ) {
+//   .home_card_time_item {
+//     & + & {
+//       margin-left: 0px;
+//     }
+//     background-color: red;
+//   }
+//   .home_main_left_card_time {
+//     padding: 0px 5px;
+//   }
+//   .home_card_time_title {
+//     font-size: 14px;
+//   }
+//   .home_link_one_item {
+//     padding: 8px;
+//     font-size: 15px;
+//   }
+//   .home_link_one_item_two {
+//     padding: 8px 22px;
+//   }
+// }

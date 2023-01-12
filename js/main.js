@@ -8,7 +8,6 @@ $(".opinion_cards_list").slick({
   autoplaySpeed: 1000,
 });
 // nav open
-
 const elHeader = document.querySelector(".header");
 const openToggleBtn = document.querySelector(".toggle_open_btn");
 
