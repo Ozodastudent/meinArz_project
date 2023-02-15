@@ -2285,8 +2285,8 @@ body {
     max-width: 340px;
   }
   .cards_item2,
-.cards_item4,
-.cards_item6 {
+  .cards_item4,
+  .cards_item6 {
     margin-left: 160px;
   }
   .cards_item_title {
@@ -2307,8 +2307,8 @@ body {
     max-width: 300px;
   }
   .cards_item2,
-.cards_item4,
-.cards_item6 {
+  .cards_item4,
+  .cards_item6 {
     margin-left: 120px;
   }
 }
@@ -2318,8 +2318,8 @@ body {
     max-width: 270px;
   }
   .cards_item2,
-.cards_item4,
-.cards_item6 {
+  .cards_item4,
+  .cards_item6 {
     margin-left: 120px;
   }
   .services_plus {
@@ -2350,8 +2350,8 @@ body {
 }
 @media only screen and (max-width: 410px) {
   .cards_item2,
-.cards_item4,
-.cards_item6 {
+  .cards_item4,
+  .cards_item6 {
     margin-left: 40px;
   }
 }
