@@ -1524,6 +1524,9 @@ body {
     background: #4e677d;
     border-radius: 10px 10px 0px 10px;
   }
+  .hero_start_button:hover {
+    color: #e9e9f1;
+  }
 }
 @media only screen and (max-width: 590px) {
   .hero_parts {
@@ -1981,6 +1984,9 @@ body {
   background-repeat: no-repeat;
   background-position: 13px 10px;
 }
+.search_input:focus {
+  outline: none;
+}
 
 .search_btn {
   margin-left: 35px;
@@ -1994,6 +2000,9 @@ body {
   border: none;
   background: #4e677d;
   border-radius: 10px;
+}
+.search_btn:hover {
+  cursor: pointer;
 }
 
 .search_plus {
@@ -2396,7 +2405,16 @@ body {
   padding-top: 93px;
   width: 100%;
   max-width: 534px;
-  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .about_card_one_line {
@@ -2410,12 +2428,13 @@ body {
 }
 
 .about_card_one_title {
-  padding-left: 130px;
+  width: 100%;
+  max-width: 400px;
   font-family: "Newsreader";
   font-weight: 700;
   font-size: 28px;
   line-height: 157%;
-  text-align: right;
+  text-align: end;
   letter-spacing: 1.16667px;
   color: #4e677d;
 }
@@ -2797,9 +2816,6 @@ body {
     right: calc(50% - 250px);
     width: 340px;
     height: 285px;
-  }
-  .about_card_three_right {
-    background-color: yellow;
   }
   .about_card_three_right_img {
     margin-top: 60px;

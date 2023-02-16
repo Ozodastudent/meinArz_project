@@ -58,6 +58,9 @@
   background-image: url("../../images/search_icon.png");
   background-repeat: no-repeat;
   background-position: 13px 10px;
+  &:focus{
+    outline: none;
+  }
 }
 .search_btn {
   margin-left: 35px;
@@ -71,6 +74,9 @@
   border: none;
   background: #4e677d;
   border-radius: 10px;
+  &:hover{
+    cursor: pointer;
+  }
 }
 .search_plus {
   position: absolute;
