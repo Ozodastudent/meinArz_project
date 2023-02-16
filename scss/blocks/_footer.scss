@@ -88,64 +88,64 @@ footer {
 }
 
 // media part
-@media only screen and (max-width: 1220px) {
-  .footer_one {
-    width: 100%;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer_one_text {
-    margin-top: 30px;
-    font-size: 24px;
-    line-height: 163%;
-    letter-spacing: 1.16667px;
-    color: #4e677d;
-  }
-  .footer_two_nav {
-    & + & {
-      margin-left: 90px;
-    }
-  }
-  .footer_two_nav_title {
-    font-size: 20px;
-  }
-  .footer_two_link {
-    font-size: 20px;
-  }
-  .footer_icons_item {
-    margin-left: -30px;
-    & + & {
-      margin-left: 21px;
-    }
-  }
-  .footer_copyright {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 180px);
-    font-family: "Blinker";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.0117em;
-    color: #4e677d;
-  }
-  .footer_director {
-    position: absolute;
-    bottom: calc(10% + 30px);
-    right: calc(5% - 40px);
-  }
-  .footer_director_btn {
-    text-decoration: none;
-  }
+// @media only screen and (max-width: 1220px) {
+//   .footer_one {
+//     width: 100%;
+//     max-width: 300px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   .footer_one_text {
+//     margin-top: 30px;
+//     font-size: 24px;
+//     line-height: 163%;
+//     letter-spacing: 1.16667px;
+//     color: #4e677d;
+//   }
+//   .footer_two_nav {
+//     & + & {
+//       margin-left: 90px;
+//     }
+//   }
+//   .footer_two_nav_title {
+//     font-size: 20px;
+//   }
+//   .footer_two_link {
+//     font-size: 20px;
+//   }
+//   .footer_icons_item {
+//     margin-left: -30px;
+//     & + & {
+//       margin-left: 21px;
+//     }
+//   }
+//   .footer_copyright {
+//     position: absolute;
+//     bottom: 0;
+//     left: calc(50% - 180px);
+//     font-family: "Blinker";
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 22px;
+//     letter-spacing: 0.0117em;
+//     color: #4e677d;
+//   }
+//   .footer_director {
+//     position: absolute;
+//     bottom: calc(10% + 30px);
+//     right: calc(5% - 40px);
+//   }
+//   .footer_director_btn {
+//     text-decoration: none;
+//   }
 
-  .footer_director_img {
-    width: 50px;
-    height: 50px;
-  }
+//   .footer_director_img {
+//     width: 50px;
+//     height: 50px;
+//   }
 
-  .footer_copyright {
-    left: calc(50% - 150px);
-    font-size: 17px;
-  }
-}
+//   .footer_copyright {
+//     left: calc(50% - 150px);
+//     font-size: 17px;
+//   }
+// }
