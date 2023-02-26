@@ -1,5 +1,5 @@
 const elLoginForm = document.querySelector(".register_form");
-const elLoginEmail = document.querySelector(".regiter_email");
+const elLoginEmail = document.querySelector(".register_email");
 const elLoginPassword = document.querySelector(".register_password");
 
 const closeBtn = document.querySelector(".close_eye");
@@ -22,16 +22,18 @@ async function loginUsers() {
       email: elLoginEmail.value.trim(),
       password: elLoginPassword.value.trim(),
     };
-    const res = await fetch(`http://meinarzt-production.up.railway.app`, {
+    const res = await fetch(`http://127.0.0.1:5000/meinarzt-app-production.up.railway.app/auth/login`, {
       method: "POST",
       headers: {
+        "accept": "*/*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(login),
     });
     const data = await res.json();
+    
     if (data.token) {
-      localStorage.setItem("login-token", data.token);
+      localStorage.setItem("login-token", JSON.stringify(data.token));
       window.location.pathname = "/home.html";
     }
   } catch (error) {

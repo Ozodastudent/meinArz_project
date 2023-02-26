@@ -384,6 +384,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fcfcfd;
+  overflow-x: hidden;
 }
 
 /* STICKY-FOOTER */
@@ -611,8 +612,8 @@ body {
   }
   .header-open .toggle_open_btn {
     position: absolute;
-    top: calc(10% + 5px);
-    right: calc(5% - 20px);
+    top: calc(5% + 10px);
+    right: calc(5% - 15px);
     z-index: 11;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3081,6 +3082,12 @@ body {
   padding-bottom: 255px;
 }
 
+.opinion_part_inner {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .opinion_part_plus {
   position: absolute;
   top: calc(15% + 15px);
@@ -3137,6 +3144,15 @@ body {
   color: #4e677d;
 }
 
+.opinion_part_hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .opinion_card_right_comments {
   width: 100%;
   max-width: 412px;
@@ -3172,6 +3188,11 @@ body {
 }
 
 @media only screen and (max-width: 1300px) {
+  .opinion_part_inner {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .opinion_title_two {
     font-size: 30px;
   }
@@ -3192,7 +3213,8 @@ body {
     font-size: 24px;
   }
   .opinion_card_left_img {
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
   }
   .opinion_part_plus2 {
     position: absolute;
@@ -3200,9 +3222,82 @@ body {
     right: 0;
   }
   .opinion_part_plus2 {
+    width: 156px;
+    height: 158px;
     position: absolute;
     top: calc(50% + 60px);
     right: 0;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .opinion_part_inner {
+    max-width: 790px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .opinion_card_left_img {
+    max-width: 360px;
+    width: 100%;
+  }
+  .opinion_card_right {
+    max-width: 280px;
+    width: 100%;
+  }
+  .opinion_card_right_comments_stars {
+    max-width: 114px;
+    width: 100%;
+    height: 20px;
+  }
+  .opinion_card_right_quotes {
+    max-width: 41px;
+    width: 100%;
+  }
+  .opinion_card_right_desc {
+    font-size: 16px;
+  }
+  .opinion_card_right_author {
+    font-size: 13.2082px;
+    font-weight: 900;
+  }
+  .opinion_part_plus2 {
+    width: 136px;
+    height: 138px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .opinion_part_inner {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(135, 121, 121, 0.263);
+  }
+  .opinion_part_hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .opinion_cards_list {
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .opinion_card_left_img {
+    width: 501px;
+    height: 263px;
+  }
+  .opinion_part_plus2 {
+    display: none;
   }
 }
 .cardiolog_header {

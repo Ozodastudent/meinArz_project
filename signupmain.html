@@ -34,6 +34,7 @@
                     type="text"
                     autocomplete="off"
                     placeholder="Akbarali Nabiev"
+                    name="firstName"
                   />
                 </label>
                 <label class="user_email user_labels d-flex flex-column my-4">
@@ -43,6 +44,7 @@
                     class="user_email_input user_inputs"
                     placeholder="example@gmail.com"
                     required
+                    name="email"
                   />
                 </label>
                 <div class="position-relative">
@@ -52,8 +54,9 @@
                       type="password"
                       class="user_password_input user_inputs"
                       placeholder="At least 8 charachters"
+                      name="password"
                     />
-                    <button type="button" class="signup_close_eye">
+                    <button class="signup_close_eye">
                       <img src="./images/close_eye.png" alt="close eye img" />
                     </button>
                   </label>
@@ -72,7 +75,7 @@
                     <span class="radio_text_other radio_text">Other</span>
                   </label>
                 </div>
-                <button class="user_signup_btn">Sign Up</button>
+                <button class="user_signup_btn" type="submit">Sign Up</button>
               </form>
               <p class="details_question_link">
                 Already have an account ?
