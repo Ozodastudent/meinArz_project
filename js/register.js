@@ -25,7 +25,7 @@ async function registerUsers() {
         gender: true
       })
     })
-    const data = await response;
+    const data = await response.json();
     console.log(data);
 
     if (data.token) {
