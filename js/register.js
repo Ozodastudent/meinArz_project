@@ -5,15 +5,23 @@ const elRegisterFormPassword = document.querySelector(".user_password_input");
 
 async function registerUsers() {
   try {
-    const res = await fetch("http://localhost:5000/user/register", {
+    const res = await fetch("http://127.0.0.1:5500/meinarzt-app-production.up.railway.app/auth/signup", {
       method: "POST",
       headers: {
+        "accept": "*/*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        user_name: elRegisterFormName.value,
+        firstName: elRegisterFormName.value,
+        lastName: elRegisterFormName.value,
         email: elRegisterFormEmail.value,
         password: elRegisterFormPassword.value,
+        specialitysId: 0,
+        isDoctor: true,
+        attachPaths: [
+          "string"
+        ],
+        gender: true
       }),
     });
     const data = await res.json();
