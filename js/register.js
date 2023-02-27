@@ -19,6 +19,7 @@ async function getCountries(){
 }
 getCountries();
 
+
 // Countries Render 
 function selectCountries(array, node) {
     let sortCountries =  array.sort((a, b) => {
