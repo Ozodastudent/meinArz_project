@@ -63,7 +63,9 @@ function selectLanguages(array, node) {
 // Register 
 async function registerUsers() {
   try {
+
     const res = await fetch("http://127.0.0.1:5503/meinarzt-app-production.up.railway.app/auth/signup", {
+
       method: "POST",
       headers: {
         "accept": "*/*",
