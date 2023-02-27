@@ -22,7 +22,7 @@ async function loginUsers() {
       email: elLoginEmail.value.trim(),
       password: elLoginPassword.value.trim(),
     };
-    const res = await fetch(`http://meinarzt-production.up.railway.app`, {
+    const res = await fetch(`http://127.0.0.1:5500/meinarzt-app-production.up.railway.app/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
