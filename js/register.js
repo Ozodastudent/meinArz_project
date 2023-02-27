@@ -13,11 +13,12 @@ fetch("https://trial.mobiscroll.com/content/countries.json").then(res => res.jso
   let eachCountry = "";
   data.forEach(element => {
     eachCountry += `<option>${element.text}</option>`
-    console.log(element.text);
+    // console.log(element.text);
     
   });
   countrySelect.innerHTML = eachCountry;
 }).catch(err => console.log(err))
+
 
 async function registerUsers() {
   try {
