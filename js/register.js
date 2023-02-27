@@ -5,7 +5,7 @@ const elRegisterFormPassword = document.querySelector(".user_password_input");
 
 async function registerUsers() {
   try {
-    const res = await fetch("http://127.0.0.1:5500/meinarzt-app-production.up.railway.app/auth/signup", {
+    const res = await fetch("http://localhost:5502/meinarzt-app-production.up.railway.app/auth/signup", {
       method: "POST",
       headers: {
         "accept": "*/*",
@@ -27,7 +27,6 @@ async function registerUsers() {
     const data = await res.json();
     console.log(data);
     if (data.token) {
-      console.log(data);
       localStorage.setItem("register-token", data.token);
       window.location.pathname = "/home.html";
     }

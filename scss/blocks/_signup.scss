@@ -77,10 +77,11 @@
   color: #4e677d;
 }
 .country_select {
+  width: 450px;
   margin-bottom: 28px;
 }
 .details_select {
-  padding: 15px 270px 15px 15px;
+  padding: 15px 15px 15px 15px;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
   font-family: "Poppins";
@@ -162,4 +163,11 @@
   text-align: center;
   letter-spacing: -0.486762px;
   color: #313946;
+}
+
+
+.counter-option::after{
+  content: "hvhg";
+  width: 200px;
+  color: red;
 }
