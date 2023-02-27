@@ -1,7 +1,3 @@
-const patientId = document.querySelector("#patient_id");
-const doctorId = document.querySelector("#doctor_id");
-const countrySelect = document.querySelector(".country_select");
-const languageSelect = document.querySelector(".language_select");
 const elRegisterForm = document.querySelector(".sign_main_left_form");
 const elRegisterFormName = document.querySelector(".user_name_input");
 const elRegisterFormEmail = document.querySelector(".user_email_input");
@@ -9,20 +5,20 @@ const elRegisterFormPassword = document.querySelector(".user_password_input");
 
 
 
-fetch("https://trial.mobiscroll.com/content/countries.json").then(res => res.json()).then(data => {
-  let eachCountry = "";
-  data.forEach(element => {
-    eachCountry += `<option>${element.text}</option>`
-    // console.log(element.text);
+// fetch("https://trial.mobiscroll.com/content/countries.json").then(res => res.json()).then(data => {
+//   let eachCountry = "";
+//   data.forEach(element => {
+//     eachCountry += `<option>${element.text}</option>`
+//     // console.log(element.text);
     
-  });
-  countrySelect.innerHTML = eachCountry;
-}).catch(err => console.log(err))
+//   });
+//   countrySelect.innerHTML = eachCountry;
+// }).catch(err => console.log(err))
 
 
 async function registerUsers() {
   try {
-    const res = await fetch("http://localhost:5000/user/register", {
+    const res = await fetch(`http://meinarzt-app-production.up.railway.app/auth/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
